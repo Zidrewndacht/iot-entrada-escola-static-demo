@@ -15,7 +15,7 @@ Lopes, Rodrigo Almeida Santos, Lucas Pereira Lima, Julia Castro Alves,
 João Silva Costa, Beatriz Souza Martins
 </p></div>
 
-<form method="post">
+<form>
     <input type="hidden" name="csrf_test_name" value="aa3dd81e68f363fb4ebb7815e7a75533">  
     <p>Para excluir o responsável Lucas Martins Ribeiro, repita abaixo o nome completo do responsável selecionado:</p>
     <label for="nome">Responsável</label>

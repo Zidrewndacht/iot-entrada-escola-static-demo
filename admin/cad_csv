@@ -6,7 +6,7 @@
     </div>
 </div>
 <!-- enctype="multipart/form-data" necessário para upload de arquivo: -->
-<form method="post" enctype="multipart/form-data">
+<form>
     <input type="hidden" name="csrf_test_name" value="aa3dd81e68f363fb4ebb7815e7a75533">
     <p>A implementação deste recurso é preliminar e deve sofrer alterações posteriores.</p>
     <p>São previstas funcionalidades para <strong>adicionar</strong> responsáveis em lote, criar <strong>associações</strong>  em lote e <strong>remover</strong>  alunos e responsáveis em lote. Atualmente, apenas a criação de novos cadastros de aluno em lote é suportada.</p>

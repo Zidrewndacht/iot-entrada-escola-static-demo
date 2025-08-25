@@ -6,7 +6,7 @@
     </div>
 </div>
 
-<form method="post">
+<form>
     <input type="hidden" name="csrf_test_name" value="aa3dd81e68f363fb4ebb7815e7a75533">    <p>As
  configurações abaixo controlam apenas a comunicação entre o servidor 
 PHP, o cliente JS e o broker MQTT. As configurações não se aplicam ao 

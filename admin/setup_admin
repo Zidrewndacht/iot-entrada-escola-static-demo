@@ -6,7 +6,7 @@
     </div>
 </div>
 
-<form method="post">
+<form>
     <input type="hidden" name="csrf_test_name" value="aa3dd81e68f363fb4ebb7815e7a75533">    <p>As alterações abaixo serão percebidas no próximo login.</p>
     
     <label for="Email">E-mail anterior</label>

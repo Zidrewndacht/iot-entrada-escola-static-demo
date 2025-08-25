@@ -10,7 +10,7 @@
         <p><strong>Status:</strong> 
         Ausente há 458 dias        </p>  <!-- alterar para indicar tempo de ausência -->  
 </div>
-<form method="post">
+<form >
     <input type="hidden" name="csrf_test_name" value="aa3dd81e68f363fb4ebb7815e7a75533">
     <p>Para excluir o aluno Ana Clara Ferreira, repita abaixo o nome completo do aluno selecionado:</p>
     <label for="nome">Aluno</label>
