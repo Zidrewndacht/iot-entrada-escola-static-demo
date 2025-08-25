@@ -11,7 +11,7 @@
                 <div id="validation-info"></div>
     </div>
 </div>
-<form action="/admin/assoc-ok" method="post">
+<form method="post">
     <input type="hidden" name="csrf_test_name" value="aa3dd81e68f363fb4ebb7815e7a75533">
     <label for="CPF">CPF</label>
     <input type="text" name="CPF" value="12345678909" minlength="11" maxlength="11" disabled="disabled">

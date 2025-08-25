@@ -7,7 +7,7 @@
 
 </div>
 
-<form action="/admin/novo_resp" method="post">
+<form method="post">
     <input type="hidden" name="csrf_test_name" value="845d2c99076c0fc2cd864eb28f8d901e">    <p>Certifique-se de associar alunos ao novo responsável após sua criação, 
         no próximo passo ou posteriormente clicando em "Alterar assoc." na 
         tabela de responsáveis</p>
