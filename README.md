@@ -13,4 +13,5 @@ Para visualizar a interface de administrador, faça "login" com email e senha em
 Para visualizar a página de responsável clique [aqui](https://zidrewndacht.github.io/iot-entrada-escola-static-demo/resp.html) ou faça "login" usando qualquer email (exceto em branco). 
 
 Esta demonstração visa *apenas* apresentar os recursos e características da interface de usuário, incluindo animações, layout responsivo, etc. O conteúdo pode não ser condizente com a implementação real (com banco de dados, servidor PHP, etc.). Por exemplo, ações como criar ou remover registros são ignoradas e páginas de "detalhes de responsável" podem não corresponder ao responsável selecionado. Essas limitações não ocorrem na implementação real.
- 
+
+Envio de formulários ainda precisa ser corrigido. Causam falha na animação de fechamento do modal pois o servidor responde ao envio com 405. preventDefault() será implementado para que modais de formulário sejam apenas fechados sem nenhuma solicitação ao servidor.
