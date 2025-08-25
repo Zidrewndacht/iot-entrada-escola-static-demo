@@ -46,7 +46,7 @@
                 <td class="tabela-aluno-lastevt 2025-05-23 13:30:00">23/05 às 13:30 - qui.</td>
                 <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a></td>
+                        href="admin/write_tag.html">Gravar tag</a></td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
                     <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
@@ -66,7 +66,7 @@
                 <td class="tabela-aluno-lastevt 2025-05-20 14:15:00">20/05 às 14:15 - seg.</td>
                 <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a></td>
+                        href="admin/write_tag.html">Gravar tag</a></td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
                     <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
@@ -86,7 +86,7 @@
                 <td class="tabela-aluno-lastevt 2025-05-24 04:48:07">24/05 às 04:48 - sex.</td>
                 <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a></td>
+                        href="admin/write_tag.html">Gravar tag</a></td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
                     <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
@@ -106,7 +106,7 @@
                 <td class="tabela-aluno-lastevt 2025-05-22 16:48:07">22/05 às 16:48 - qua.</td>
                 <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a></td>
+                        href="admin/write_tag.html">Gravar tag</a></td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
                     <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
@@ -126,7 +126,7 @@
                 <td class="tabela-aluno-lastevt 2025-10-19 18:20:46">19/10 às 18:20 - sáb.</td>
                 <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a></td>
+                        href="admin/write_tag.html">Gravar tag</a></td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
                     <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
@@ -146,7 +146,7 @@
                 <td class="tabela-aluno-lastevt 2025-10-20 16:27:07">20/10 às 16:27 - dom.</td>
                 <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a></td>
+                        href="admin/write_tag.html">Gravar tag</a></td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
                     <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
@@ -166,7 +166,7 @@
                 <td class="tabela-aluno-lastevt 2025-05-19 16:48:07">19/05 às 16:48 - dom.</td>
                 <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a></td>
+                        href="admin/write_tag.html">Gravar tag</a></td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
                     <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
@@ -186,7 +186,7 @@
                 <td class="tabela-aluno-lastevt 2025-10-19 21:05:24">19/10 às 21:05 - sáb.</td>
                 <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a></td>
+                        href="admin/write_tag.html">Gravar tag</a></td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
                     <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
@@ -206,7 +206,7 @@
                 <td class="tabela-aluno-lastevt 2025-05-17 16:48:07">17/05 às 16:48 - sex.</td>
                 <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a></td>
+                        href="admin/write_tag.html">Gravar tag</a></td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
                     <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
@@ -222,7 +222,7 @@
                 <td class="tabela-aluno-lastevt empty">Nenhum</td>
                 <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a></td>
+                        href="admin/write_tag.html">Gravar tag</a></td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
                     <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
@@ -238,7 +238,7 @@
                 <td class="tabela-aluno-lastevt empty">Nenhum</td>
                 <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a></td>
+                        href="admin/write_tag.html">Gravar tag</a></td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
                     <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
@@ -258,7 +258,7 @@
                 <td class="tabela-aluno-lastevt 2025-05-22 15:00:00">22/05 às 15:00 - qua.</td>
                 <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a></td>
+                        href="admin/write_tag.html">Gravar tag</a></td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
                     <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
@@ -278,7 +278,7 @@
                 <td class="tabela-aluno-lastevt 2025-05-19 15:30:00">19/05 às 15:30 - dom.</td>
                 <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a></td>
+                        href="admin/write_tag.html">Gravar tag</a></td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
                     <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
@@ -298,7 +298,7 @@
                 <td class="tabela-aluno-lastevt 2025-05-24 14:00:00">24/05 às 14:00 - sex.</td>
                 <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a></td>
+                        href="admin/write_tag.html">Gravar tag</a></td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
                     <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
@@ -318,7 +318,7 @@
                 <td class="tabela-aluno-lastevt 2025-05-21 13:45:00">21/05 às 13:45 - ter.</td>
                 <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a></td>
+                        href="admin/write_tag.html">Gravar tag</a></td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
                     <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
@@ -337,7 +337,7 @@
                 <td class="tabela-aluno-manage-btn rfid-write-btn">
                     <a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a>
+                        href="admin/write_tag.html">Gravar tag</a>
                 </td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
@@ -358,7 +358,7 @@
                 <td class="tabela-aluno-manage-btn rfid-write-btn">
                     <a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a>
+                        href="admin/write_tag.html">Gravar tag</a>
                 </td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
@@ -379,7 +379,7 @@
                 <td class="tabela-aluno-manage-btn rfid-write-btn">
                     <a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a>
+                        href="admin/write_tag.html">Gravar tag</a>
                 </td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
@@ -400,7 +400,7 @@
                 <td class="tabela-aluno-manage-btn rfid-write-btn">
                     <a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a>
+                        href="admin/write_tag.html">Gravar tag</a>
                 </td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
@@ -421,7 +421,7 @@
                 <td class="tabela-aluno-manage-btn rfid-write-btn">
                     <a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a>
+                        href="admin/write_tag.html">Gravar tag</a>
                 </td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
@@ -442,7 +442,7 @@
                 <td class="tabela-aluno-manage-btn rfid-write-btn">
                     <a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a>
+                        href="admin/write_tag.html">Gravar tag</a>
                 </td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
@@ -463,7 +463,7 @@
                 <td class="tabela-aluno-manage-btn rfid-write-btn">
                     <a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a>
+                        href="admin/write_tag.html">Gravar tag</a>
                 </td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
@@ -484,7 +484,7 @@
                 <td class="tabela-aluno-manage-btn rfid-write-btn">
                     <a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a>
+                        href="admin/write_tag.html">Gravar tag</a>
                 </td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
@@ -505,7 +505,7 @@
                 <td class="tabela-aluno-manage-btn rfid-write-btn">
                     <a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a>
+                        href="admin/write_tag.html">Gravar tag</a>
                 </td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
@@ -526,7 +526,7 @@
                 <td class="tabela-aluno-manage-btn rfid-write-btn">
                     <a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a>
+                        href="admin/write_tag.html">Gravar tag</a>
                 </td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
@@ -547,7 +547,7 @@
                 <td class="tabela-aluno-manage-btn rfid-write-btn">
                     <a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a>
+                        href="admin/write_tag.html">Gravar tag</a>
                 </td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
@@ -568,7 +568,7 @@
                 <td class="tabela-aluno-manage-btn rfid-write-btn">
                     <a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a>
+                        href="admin/write_tag.html">Gravar tag</a>
                 </td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
@@ -589,7 +589,7 @@
                 <td class="tabela-aluno-manage-btn rfid-write-btn">
                     <a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a>
+                        href="admin/write_tag.html">Gravar tag</a>
                 </td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
@@ -610,7 +610,7 @@
                 <td class="tabela-aluno-manage-btn rfid-write-btn">
                     <a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a>
+                        href="admin/write_tag.html">Gravar tag</a>
                 </td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
@@ -631,7 +631,7 @@
                 <td class="tabela-aluno-manage-btn rfid-write-btn">
                     <a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a>
+                        href="admin/write_tag.html">Gravar tag</a>
                 </td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
@@ -652,7 +652,7 @@
                 <td class="tabela-aluno-manage-btn rfid-write-btn">
                     <a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a>
+                        href="admin/write_tag.html">Gravar tag</a>
                 </td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
@@ -673,7 +673,7 @@
                 <td class="tabela-aluno-manage-btn rfid-write-btn">
                     <a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a>
+                        href="admin/write_tag.html">Gravar tag</a>
                 </td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
@@ -694,7 +694,7 @@
                 <td class="tabela-aluno-manage-btn rfid-write-btn">
                     <a data-table="alunos" class="iframe-small"
                         title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
-                        href="admin/write_tag">Gravar tag</a>
+                        href="admin/write_tag.html">Gravar tag</a>
                 </td>
                 <td class="tabela-aluno-manage-btn cad-ban-btn"
                     title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
