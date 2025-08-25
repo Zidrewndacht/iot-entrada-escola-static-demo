@@ -6,6 +6,6 @@
     </div>
 </div>
 <form>
-    <input type="submit" name="submit" value="OK" onclick="animateModalSmallClose()">
+    <input type="submit" name="submit" value="OK" onclick="event.preventDefault(); console.log('Form submission prevented in demo'); animateModalSmallClose();">
 </form>
 </body></html>

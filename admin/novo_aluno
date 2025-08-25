@@ -21,6 +21,6 @@
     <label for="Turma">Turma</label>
     <input type="text" id="Turma" name="Turma" minlength="6" maxlength="16">
 
-    <input type="submit" name="submit" value="Salvar"  onclick="animateModalSmallClose()">
+    <input type="submit" name="submit" value="Salvar" onclick="event.preventDefault(); console.log('Form submission prevented in demo'); animateModalSmallClose();">
 </form>
 </body></html>

@@ -30,5 +30,5 @@ dispositivo IoT, que precisa ser configurado separadamente.</p>
     <label for="mqtt_password">Senha MQTT</label>
     <input type="password" name="mqtt_password" value="#@%#$T$ET$#%345r34r34" required="">
 
-    <input type="submit" name="submit" value="Salvar configurações"  onclick="animateModalSmallClose()">
+    <input type="submit" name="submit" value="Salvar configurações" onclick="event.preventDefault(); console.log('Form submission prevented in demo'); animateModalSmallClose();">
 </form></body></html>

@@ -14,6 +14,6 @@
     <label for="csv_file">Arquivo: </label>
     <input type="file" name="csv_file" id="csv_file">
 
-    <input type="submit" name="submit" value="Enviar"  onclick="animateModalSmallClose()">
+    <input type="submit" name="submit" value="Enviar" onclick="event.preventDefault(); console.log('Form submission prevented in demo'); animateModalSmallClose();">
 </form>
 </body></html>

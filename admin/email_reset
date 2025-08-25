@@ -17,6 +17,6 @@
     <label for="Email">E-mail</label>
     <input type="email" name="Email" value="ex@emplo.com">
 
-    <input type="submit" name="submit" value="Salvar novo e-mail"  onclick="animateModalSmallClose()"> 
+    <input type="submit" name="submit" value="Salvar novo e-mail" onclick="event.preventDefault(); console.log('Form submission prevented in demo'); animateModalSmallClose();"> 
 </form>
 </body></html>

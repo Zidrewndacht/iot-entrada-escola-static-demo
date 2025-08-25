@@ -56,6 +56,6 @@
     <p> Selecione um ou mais alunos para associar com o responsável.
         O responsável terá acesso direto ao status dos alunos selecionados.</p>
     <p>Para conta de usuário do SOE, associe a todos os estudantes aqui.</p>
-    <input type="submit" name="submit" value="Salvar">
+    <input type="submit" name="submit" value="Salvar" onclick="event.preventDefault(); console.log('Form submission prevented in demo'); animateModalSmallClose();">
 </form>
 </body></html>

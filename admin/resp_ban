@@ -21,6 +21,6 @@ João Silva Costa, Beatriz Souza Martins
     <label for="nome">Responsável</label>
     <input type="text" name="nome">
 
-    <input type="submit" name="submit" class="delete-submit" value="Excluir responsável"  onclick="animateModalSmallClose()">
+    <input type="submit" name="submit" class="delete-submit" value="Excluir responsável" onclick="event.preventDefault(); console.log('Form submission prevented in demo'); animateModalSmallClose();">
 </form>
 </body></html>

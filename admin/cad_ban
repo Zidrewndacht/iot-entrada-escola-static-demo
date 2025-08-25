@@ -16,7 +16,7 @@
     <label for="nome">Aluno</label>
     <input type="text" name="nome">
 
-    <input type="submit" name="submit" class="delete-submit" value="Excluir aluno"  onclick="animateModalSmallClose()">
+    <input type="submit" name="submit" class="delete-submit" value="Excluir aluno"  onclick="event.preventDefault(); console.log('Form submission prevented in demo'); animateModalSmallClose();">
 </form>
 
 </body></html>

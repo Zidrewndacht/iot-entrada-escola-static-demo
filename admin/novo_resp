@@ -27,6 +27,6 @@
     <label for="pw2">Confirmar Senha</label>
     <input type="password" id="pw2" name="pw2" value="">
 
-    <input type="submit" name="submit" value="Salvar e associar alunos"  onclick="animateModalSmallClose()">
+    <input type="submit" name="submit" value="Salvar e associar alunos" onclick="event.preventDefault(); console.log('Form submission prevented in demo'); animateModalSmallClose();">
 </form>
 </body></html>
