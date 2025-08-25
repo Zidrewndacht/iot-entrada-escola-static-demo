@@ -148,7 +148,7 @@ function firstTag(event, id) {
     animateModalSmallClose().then(() => {   //aguarda animação de fechamento antes de abrir novamente:
         animateModalWrapperOpen();
         animateModalSmallOpen();
-        modalSmallContent.innerHTML = `<iframe src="/admin/write_tag/${id}" width="640" height="420" frameBorder="0" allowTransparency="true"></iframe>`;
+        modalSmallContent.innerHTML = `<iframe src="admin/write_tag/${id}" width="640" height="420" frameBorder="0" allowTransparency="true"></iframe>`;
     });
 }
 function fetchAlunos() {
