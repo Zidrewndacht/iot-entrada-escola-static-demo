@@ -152,7 +152,7 @@ function firstTag(event, id) {
     });
 }
 function fetchAlunos() {
-    return fetch("/admin/tabela_alunos")
+    return fetch("admin/tabela_alunos")
         .then(response => response.text())
         .then(data => new Promise(resolve => {  //para Promise.all em window.onload
             document.getElementById('tabela-alunos-wrapper').innerHTML = data;
@@ -165,7 +165,7 @@ function fetchAlunos() {
 }
 
 function fetchResp() {
-    return fetch("/admin/tabela_resp")
+    return fetch("admin/tabela_resp")
         .then(response => response.text())
         .then(data => new Promise(resolve => {  //para Promise.all em window.onload
             document.getElementById('tabela-resp-wrapper').innerHTML = data;
@@ -178,7 +178,7 @@ function fetchResp() {
 }
 
 function fetchEvt() {
-    return fetch("/admin/tabela_evt")
+    return fetch("admin/tabela_evt")
         .then(response => response.text())
         .then(data => new Promise(resolve => {  //para Promise.all em window.onload
             document.getElementById('tabela-evt-wrapper').innerHTML = data;
