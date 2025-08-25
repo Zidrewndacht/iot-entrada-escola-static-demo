@@ -45,12 +45,6 @@ function addTargetEvents() {    //Converte formulários em AJAX:
     if (form) addFormListeners(form);
 }
 
-// Prevent all form submissions globally
-document.addEventListener('submit', function(event) {
-    event.preventDefault();
-    console.log("Form submission prevented for:", event.target);
-});
-
 /** Adiciona event listeners para botões de tabela: 
  *  clique em link abre modal em vez de página: pequeno, grande ou iframe;
  *  tabelas reordenáveis para campos 'sortable';
