@@ -1,0 +1,32 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body><div class="modal-status">
+    <h1>Cadastrar novo responsável</h1>
+    <div id="session-info-field">
+                <div id="validation-info"></div>
+    </div>
+
+</div>
+
+<form action="/admin/novo_resp" method="post">
+    <input type="hidden" name="csrf_test_name" value="845d2c99076c0fc2cd864eb28f8d901e">    <p>Certifique-se de associar alunos ao novo responsável após sua criação, 
+        no próximo passo ou posteriormente clicando em "Alterar assoc." na 
+        tabela de responsáveis</p>
+
+    <label for="CPF">CPF</label>
+    <input type="text" id="CPF" name="CPF" minlength="11" maxlength="11">
+
+    <label for="NomeCompleto">Nome</label>
+    <input type="text" id="NomeCompleto" name="NomeCompleto" minlength="6" maxlength="80">
+    
+    <label for="Email">E-mail</label>
+    <input type="email" id="Email" name="Email" minlength="4" maxlength="254">
+
+    <label for="pw">Senha</label>
+    <input type="password" id="pw" name="pw" value="">
+
+    <label for="pw2">Confirmar Senha</label>
+    <input type="password" id="pw2" name="pw2" value="">
+
+    <input type="submit" name="submit" value="Salvar e associar alunos"  onclick="animateModalSmallClose()">
+</form>
+</body></html>

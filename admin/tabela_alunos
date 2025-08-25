@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+
+<body>
+    <table id="tabela-alunos">
+        <thead>
+            <tr>
+                <th class="tabela-aluno-status-btn" rowspan="2" id="novo-aluno-btn">
+                    <a class="modal-small"
+                        title="Clique para iniciar o cadastro individual de um novo aluno. Para adicionar múltiplos alunos em lote em vez disso, clique no botão no topo da tela em vez deste."
+                        href="admin/novo_aluno">Cadastrar<br>novo aluno </a>
+                </th>
+                <th class="title-tabela-aluno" colspan="1">
+                    <h1 id="title-aluno">Alunos</h1>
+                </th>
+                <th><!-- dummy para alinhamento da pesquisa--></th>
+                <th id="tabela-pesquisa-alunos" colspan="5">
+                    <input data-table-id="tabela-alunos" type="search" class="tabela-pesquisa-campo"
+                        placeholder="Pesquisar alunos">
+                </th>
+            </tr>
+            <tr>
+                <th class="tabela-aluno-nome sortable"><span class="arrow">↕</span> Aluno </th>
+                <th class="tabela-aluno-turma sortable"><span class="arrow">↕</span> Turma</th>
+                <th class="tabela-aluno-tipo sortable"><span class="arrow">↕</span> Situação</th>
+                <th class="tabela-aluno-lastevt sortable"><span class="arrow">↕</span> Último evento </th>
+                <th class="tabela-aluno-manage" colspan="2">Gerenciar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tabela-aluno-status-btn">
+
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/112384">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Ana Clara Ferreira</td>
+                <td class="tabela-aluno-turma">INF1 2022</td>
+                <td class="tabela-aluno-tipo td-aluno-ausente">
+                    Ausente há <strong>8 dias</strong> </td>
+                <td class="tabela-aluno-lastevt 2025-05-23 13:30:00">23/05 às 13:30 - qui.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a></td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
+
+            </tr>
+            <tr>
+                <td class="tabela-aluno-status-btn">
+
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/112385">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Gabriel Oliveira Rocha</td>
+                <td class="tabela-aluno-turma">INF1 2022</td>
+                <td class="tabela-aluno-tipo td-aluno-ausente">
+                    Ausente há 1 dia </td>
+                <td class="tabela-aluno-lastevt 2025-05-20 14:15:00">20/05 às 14:15 - seg.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a></td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
+
+            </tr>
+            <tr>
+                <td class="tabela-aluno-status-btn">
+
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/132347">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Maria Clara de Souza</td>
+                <td class="tabela-aluno-turma">INF1 2022</td>
+                <td class="tabela-aluno-tipo td-aluno-ausente">
+                    Ausente há <strong>7 dias</strong> </td>
+                <td class="tabela-aluno-lastevt 2025-05-24 04:48:07">24/05 às 04:48 - sex.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a></td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
+
+            </tr>
+            <tr>
+                <td class="tabela-aluno-status-btn">
+
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/132349">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Ana Luiza Correia</td>
+                <td class="tabela-aluno-turma">INF1 2022</td>
+                <td class="tabela-aluno-tipo td-aluno-ausente">
+                    Ausente há <strong>58 dias</strong> </td>
+                <td class="tabela-aluno-lastevt 2025-05-22 16:48:07">22/05 às 16:48 - qua.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a></td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
+
+            </tr>
+            <tr>
+                <td class="tabela-aluno-status-btn">
+
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/132350">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Felipe Cardoso Pinto</td>
+                <td class="tabela-aluno-turma">INF1 2022</td>
+                <td class="tabela-aluno-tipo td-aluno-presente">
+                    Presente </td>
+                <td class="tabela-aluno-lastevt 2025-10-19 18:20:46">19/10 às 18:20 - sáb.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a></td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
+
+            </tr>
+            <tr>
+                <td class="tabela-aluno-status-btn">
+
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/132351">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Beatriz Rocha Silva</td>
+                <td class="tabela-aluno-turma">INF1 2022</td>
+                <td class="tabela-aluno-tipo td-aluno-presente">
+                    Presente </td>
+                <td class="tabela-aluno-lastevt 2025-10-20 16:27:07">20/10 às 16:27 - dom.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a></td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
+
+            </tr>
+            <tr>
+                <td class="tabela-aluno-status-btn">
+
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/132352">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Guilherme Sousa Costa</td>
+                <td class="tabela-aluno-turma">INF1 2022</td>
+                <td class="tabela-aluno-tipo td-aluno-ausente">
+                    Ausente há <strong>6 dias</strong> </td>
+                <td class="tabela-aluno-lastevt 2025-05-19 16:48:07">19/05 às 16:48 - dom.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a></td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
+
+            </tr>
+            <tr>
+                <td class="tabela-aluno-status-btn">
+
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/132353">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Laura Rodrigues Melo</td>
+                <td class="tabela-aluno-turma">INF1 2022</td>
+                <td class="tabela-aluno-tipo td-aluno-presente">
+                    Presente </td>
+                <td class="tabela-aluno-lastevt 2025-10-19 21:05:24">19/10 às 21:05 - sáb.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a></td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
+
+            </tr>
+            <tr>
+                <td class="tabela-aluno-status-btn">
+
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/132354">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Bruno Ferreira Barbosa</td>
+                <td class="tabela-aluno-turma">INF1 2022</td>
+                <td class="tabela-aluno-tipo td-aluno-presente">
+                    Presente </td>
+                <td class="tabela-aluno-lastevt 2025-05-17 16:48:07">17/05 às 16:48 - sex.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a></td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
+
+            </tr>
+            <tr>
+                <td class="tabela-aluno-status-btn">
+                </td>
+                <td class="tabela-aluno-nome">Camila Dias Lopes</td>
+                <td class="tabela-aluno-turma">INF1 2022</td>
+                <td class="tabela-aluno-tipo empty">
+                    Nenhum </td>
+                <td class="tabela-aluno-lastevt empty">Nenhum</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a></td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
+
+            </tr>
+            <tr>
+                <td class="tabela-aluno-status-btn">
+                </td>
+                <td class="tabela-aluno-nome">Rodrigo Almeida Santos</td>
+                <td class="tabela-aluno-turma">INF1 2022</td>
+                <td class="tabela-aluno-tipo empty">
+                    Nenhum </td>
+                <td class="tabela-aluno-lastevt empty">Nenhum</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a></td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
+
+            </tr>
+            <tr>
+                <td class="tabela-aluno-status-btn">
+
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/132457">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Lucas Pereira Lima</td>
+                <td class="tabela-aluno-turma">ADM1 2022</td>
+                <td class="tabela-aluno-tipo td-aluno-ausente">
+                    Ausente há <strong>59 dias</strong> </td>
+                <td class="tabela-aluno-lastevt 2025-05-22 15:00:00">22/05 às 15:00 - qua.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a></td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
+
+            </tr>
+            <tr>
+                <td class="tabela-aluno-status-btn">
+
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/132458">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Julia Castro Alves</td>
+                <td class="tabela-aluno-turma">ADM1 2022</td>
+                <td class="tabela-aluno-tipo td-aluno-ausente">
+                    Ausente há <strong>62 dias</strong> </td>
+                <td class="tabela-aluno-lastevt 2025-05-19 15:30:00">19/05 às 15:30 - dom.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a></td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
+
+            </tr>
+            <tr>
+                <td class="tabela-aluno-status-btn">
+
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/232356">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">João Silva Costa</td>
+                <td class="tabela-aluno-turma">INF1 2023</td>
+                <td class="tabela-aluno-tipo td-aluno-ausente">
+                    Ausente há 2 dias </td>
+                <td class="tabela-aluno-lastevt 2025-05-24 14:00:00">24/05 às 14:00 - sex.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a></td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
+
+            </tr>
+            <tr>
+                <td class="tabela-aluno-status-btn">
+
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/232357">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Beatriz Souza Martins</td>
+                <td class="tabela-aluno-turma">INF1 2023</td>
+                <td class="tabela-aluno-tipo td-aluno-ausente">
+                    Ausente há <strong>60 dias</strong> </td>
+                <td class="tabela-aluno-lastevt 2025-05-21 13:45:00">21/05 às 13:45 - ter.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn"><a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a></td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a></td>
+
+            </tr>
+            <tr>
+                <td class="tabela-aluno-status-btn">
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/112384">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Mariana Silva</td>
+                <td class="tabela-aluno-turma">ADM1 2023</td>
+                <td class="tabela-aluno-tipo td-aluno-presente">Presente</td>
+                <td class="tabela-aluno-lastevt 2025-10-19 08:30:00">19/10 às 08:30 - sáb.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn">
+                    <a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a>
+                </td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tabela-aluno-status-btn">
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/112384">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Pedro Henrique Oliveira Santos</td>
+                <td class="tabela-aluno-turma">ADM1 2023</td>
+                <td class="tabela-aluno-tipo td-aluno-presente">Presente</td>
+                <td class="tabela-aluno-lastevt 2025-10-19 09:15:00">19/10 às 09:15 - sáb.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn">
+                    <a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a>
+                </td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tabela-aluno-status-btn">
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/112384">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Camila Rodrigues</td>
+                <td class="tabela-aluno-turma">ADM1 2023</td>
+                <td class="tabela-aluno-tipo td-aluno-ausente">Ausente há <strong>9 dias</strong></td>
+                <td class="tabela-aluno-lastevt 2025-07-22 14:20:00">22/07 às 14:20 - ter.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn">
+                    <a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a>
+                </td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tabela-aluno-status-btn">
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/112384">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Lucas Vinicius Pereira Costa</td>
+                <td class="tabela-aluno-turma">ADM1 2023</td>
+                <td class="tabela-aluno-tipo td-aluno-presente">Presente</td>
+                <td class="tabela-aluno-lastevt 2025-10-19 10:45:00">19/10 às 10:45 - sáb.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn">
+                    <a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a>
+                </td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tabela-aluno-status-btn">
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/112384">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Fernanda Alves</td>
+                <td class="tabela-aluno-turma">ADM1 2023</td>
+                <td class="tabela-aluno-tipo td-aluno-presente">Presente</td>
+                <td class="tabela-aluno-lastevt 2025-10-19 11:30:00">19/10 às 11:30 - sáb.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn">
+                    <a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a>
+                </td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tabela-aluno-status-btn">
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/112384">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Roberto Carlos Silva Oliveira</td>
+                <td class="tabela-aluno-turma">ADM1 2023</td>
+                <td class="tabela-aluno-tipo td-aluno-ausente">Ausente há 3 dias</td>
+                <td class="tabela-aluno-lastevt 2025-03-29 16:45:00">29/03 às 16:45 - sáb.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn">
+                    <a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a>
+                </td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tabela-aluno-status-btn">
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/112384">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Isabela Maria Santos</td>
+                <td class="tabela-aluno-turma">ADM1 2023</td>
+                <td class="tabela-aluno-tipo td-aluno-presente">Presente</td>
+                <td class="tabela-aluno-lastevt 2025-10-19 13:15:00">19/10 às 13:15 - sáb.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn">
+                    <a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a>
+                </td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tabela-aluno-status-btn">
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/112384">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Carlos Eduardo Silva</td>
+                <td class="tabela-aluno-turma">INF1 2022</td>
+                <td class="tabela-aluno-tipo td-aluno-presente">Presente</td>
+                <td class="tabela-aluno-lastevt 2025-10-19 09:30:00">19/10 às 09:30 - sáb.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn">
+                    <a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a>
+                </td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tabela-aluno-status-btn">
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/112384">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Rafael Mendes Gomes</td>
+                <td class="tabela-aluno-turma">INF1 2022</td>
+                <td class="tabela-aluno-tipo td-aluno-ausente">Ausente há 2 dias</td>
+                <td class="tabela-aluno-lastevt 2025-06-20 11:00:00">20/06 às 11:00 - sex.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn">
+                    <a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a>
+                </td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tabela-aluno-status-btn">
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/112384">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Beatriz Almeida Santos</td>
+                <td class="tabela-aluno-turma">INF1 2022</td>
+                <td class="tabela-aluno-tipo td-aluno-presente">Presente</td>
+                <td class="tabela-aluno-lastevt 2025-10-19 08:15:00">19/10 às 08:15 - sáb.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn">
+                    <a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a>
+                </td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tabela-aluno-status-btn">
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/112384">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Juliana Ribeiro Costa</td>
+                <td class="tabela-aluno-turma">INF1 2022</td>
+                <td class="tabela-aluno-tipo td-aluno-presente">Presente</td>
+                <td class="tabela-aluno-lastevt 2025-10-19 10:45:00">19/10 às 10:45 - sáb.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn">
+                    <a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a>
+                </td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tabela-aluno-status-btn">
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/112384">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Rafael Mendes Gomes</td>
+                <td class="tabela-aluno-turma">INF1 2022</td>
+                <td class="tabela-aluno-tipo td-aluno-ausente">Ausente há 2 dias</td>
+                <td class="tabela-aluno-lastevt 2025-06-20 11:00:00">20/06 às 11:00 - sex.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn">
+                    <a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a>
+                </td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tabela-aluno-status-btn">
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/112384">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Larissa Freitas Nunes</td>
+                <td class="tabela-aluno-turma">INF1 2022</td>
+                <td class="tabela-aluno-tipo td-aluno-presente">Presente</td>
+                <td class="tabela-aluno-lastevt 2025-10-19 12:00:00">19/10 às 12:00 - sáb.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn">
+                    <a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a>
+                </td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tabela-aluno-status-btn">
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/112384">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Fernanda Cristina Lima</td>
+                <td class="tabela-aluno-turma">ADM1 2023</td>
+                <td class="tabela-aluno-tipo td-aluno-presente">Presente</td>
+                <td class="tabela-aluno-lastevt 2025-10-19 08:30:00">19/10 às 08:30 - sáb.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn">
+                    <a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a>
+                </td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tabela-aluno-status-btn">
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/112384">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Roberto Henrique Souza</td>
+                <td class="tabela-aluno-turma">ADM1 2023</td>
+                <td class="tabela-aluno-tipo td-aluno-presente">Presente</td>
+                <td class="tabela-aluno-lastevt 2025-10-19 09:15:00">19/10 às 09:15 - sáb.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn">
+                    <a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a>
+                </td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tabela-aluno-status-btn">
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/112384">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Camila Rodrigues Alves</td>
+                <td class="tabela-aluno-turma">ADM1 2023</td>
+                <td class="tabela-aluno-tipo td-aluno-ausente">Ausente há <strong>9 dias</strong></td>
+                <td class="tabela-aluno-lastevt 2025-07-22 14:20:00">22/07 às 14:20 - ter.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn">
+                    <a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a>
+                </td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tabela-aluno-status-btn">
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/112384">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Thiago Barbosa Monteiro</td>
+                <td class="tabela-aluno-turma">ADM1 2023</td>
+                <td class="tabela-aluno-tipo td-aluno-presente">Presente</td>
+                <td class="tabela-aluno-lastevt 2025-10-19 11:45:00">19/10 às 11:45 - sáb.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn">
+                    <a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a>
+                </td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tabela-aluno-status-btn">
+                    <a data-table="alunos" class="status-aluno-btn modal-small"
+                        title="Clique para visualizar status e eventos deste aluno. Este botão só é exibido para alunos que possuem pelo menos um evento registrado."
+                        href="status_aluno/112384">Visualizar eventos</a>
+                </td>
+                <td class="tabela-aluno-nome">Patrícia Helena Cardoso</td>
+                <td class="tabela-aluno-turma">ADM1 2023</td>
+                <td class="tabela-aluno-tipo td-aluno-presente">Presente</td>
+                <td class="tabela-aluno-lastevt 2025-10-19 13:10:00">19/10 às 13:10 - sáb.</td>
+                <td class="tabela-aluno-manage-btn rfid-write-btn">
+                    <a data-table="alunos" class="iframe-small"
+                        title="Clique para iniciar gravação de nova tag RFID. Essa ação substitui a tag antiga, se existir."
+                        href="admin/write_tag">Gravar tag</a>
+                </td>
+                <td class="tabela-aluno-manage-btn cad-ban-btn"
+                    title="Clique para excluir do sistema permanentemente este aluno, e todos os dados associados, exceto responsáveis.">
+                    <a data-table="alunos" class="modal-small" href="admin/cad_ban">Excluir aluno</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

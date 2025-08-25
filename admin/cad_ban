@@ -1,0 +1,22 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body><div class="modal-status">
+    <h1>Excluir aluno</h1>
+    <div id="session-info-field">
+                <div id="validation-info"></div>
+    </div>
+    
+    <p><strong>Aluno:</strong> Ana Clara Ferreira</p>
+        <p><strong>Turma:</strong> INF1 2022</p>
+        <p><strong>Status:</strong> 
+        Ausente há 458 dias        </p>  <!-- alterar para indicar tempo de ausência -->  
+</div>
+<form action="/admin/cad_ban" method="post">
+    <input type="hidden" name="csrf_test_name" value="aa3dd81e68f363fb4ebb7815e7a75533">
+    <p>Para excluir o aluno Ana Clara Ferreira, repita abaixo o nome completo do aluno selecionado:</p>
+    <label for="nome">Aluno</label>
+    <input type="text" name="nome">
+
+    <input type="submit" name="submit" class="delete-submit" value="Excluir aluno"  onclick="animateModalSmallClose()">
+</form>
+
+</body></html>

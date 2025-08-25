@@ -1,0 +1,34 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body><div class="modal-status">
+    <h1>Configurações do broker MQTT</h1>
+    <div id="session-info-field">
+                <div id="validation-info"></div>
+    </div>
+</div>
+
+<form action="/admin/setup_mqtt" method="post">
+    <input type="hidden" name="csrf_test_name" value="aa3dd81e68f363fb4ebb7815e7a75533">    <p>As
+ configurações abaixo controlam apenas a comunicação entre o servidor 
+PHP, o cliente JS e o broker MQTT. As configurações não se aplicam ao 
+dispositivo IoT, que precisa ser configurado separadamente.</p>
+    <p>Por razões de segurança e compatibilidade, apenas brokers MQTT seguros (TLS) são suportados.</p>
+    <p>Apenas o broker MQTT <a href="https://www.emqx.io/">EMQX</a> é suportado, pois o sistema faz uso de <em>webhooks</em>, que precisam estar corretamente configurados também no broker.</p>
+    <p>As alterações serão percebidas no próximo login.</p>
+
+    <label for="mqtt_server">Servidor MQTT</label>
+    <input type="text" name="mqtt_server" value="zidrewndacht.freeddns.org" required="">
+
+    <label for="mqtt_port">Porta MQTT TLS</label>
+    <input type="number" name="mqtt_port" value="8883" required="">
+
+    <label for="mqtt_ws_port">Porta WebSocket WSS</label>
+    <input type="number" name="mqtt_ws_port" value="8084" required="">
+
+    <label for="mqtt_username">Usuário MQTT</label>
+    <input type="text" name="mqtt_username" value="php.server" required="">
+
+    <label for="mqtt_password">Senha MQTT</label>
+    <input type="password" name="mqtt_password" value="#@%#$T$ET$#%345r34r34" required="">
+
+    <input type="submit" name="submit" value="Salvar configurações"  onclick="animateModalSmallClose()">
+</form></body></html>

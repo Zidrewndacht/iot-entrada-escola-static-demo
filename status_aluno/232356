@@ -1,0 +1,48 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body><div class="aluno-card">
+    <div class="aluno-status">
+        <table class="status-aluno-header-table">
+            <tbody>
+                <tr><td><strong>Aluno:</strong>     </td><td>João Silva Costa  </td></tr>
+                <tr><td><strong>Turma:</strong>     </td><td>INF1 2023  </td></tr>
+                <tr><td><strong>Status:</strong>    </td><td>
+                Ausente há 457 dias                </td></tr>  <!-- alterar para indicar tempo de ausência --> 
+                
+            </tbody>
+        </table>   
+    </div>
+    <h1>Eventos</h1>
+    <div class="scrollable">
+        <table>
+            <tbody><tr>
+                <th>Data / Hora</th>
+                <th>Tipo</th>
+            </tr>
+                        <tr>
+                <td>sex. 24/05 às 14:00</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>sex. 24/05 às 05:00</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                        <tr>
+                <td>qui. 23/05 às 14:00</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>qui. 23/05 às 05:00</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                        <tr>
+                <td>qua. 22/05 às 14:00</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>qua. 22/05 às 05:00</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                    </tbody></table>
+    </div>
+</div>
+</body></html>

@@ -1,0 +1,678 @@
+<!-- wrappers estão em admin.php -->
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+
+<body>
+    <table id="tabela-resp">
+        <thead>
+            <tr>
+                <th rowspan="2" id="novo-resp-btn">
+                    <a class="modal-small"
+                        title="Clique para iniciar o cadastro individual de um novo responsável. Para adicionar múltiplos responsáveis em lote em vez disso, clique no botão no topo da tela em vez deste."
+                        href="admin/novo_resp">Cadastrar responsável </a>
+                </th>
+                <th class="tabela-resp-dummy"><!-- dummy para alinhamento da pesquisa--></th>
+                <th colspan="2">
+                    <h1 id="title-resp">Responsáveis</h1>
+                </th>
+                <th class="tabela-pesquisa-th" colspan="5">
+                    <input data-table-id="tabela-resp" type="search" class="tabela-pesquisa-campo"
+                        placeholder="Pesquisar responsáveis">
+                </th>
+            </tr>
+            <tr>
+                <th class="tabela-resp-nome sortable"><span class="arrow">↕</span> Responsável</th>
+                <th class="tabela-resp-assoc" colspan="2">Alunos associados</th>
+                <th class="tabela-resp-email">E-mail</th>
+                <th class="tabela-resp-manage" colspan="3">Gerenciar</th>
+            </tr>
+        </thead>
+        <tbody>
+                        <tr>
+                <td class="tabela-resp-status-btn">
+                    <a data-table="resp" class="status-resp-btn"
+                        title="Clique para visualizar simultaneamente status e eventos de todos os alunos associados com este responsável."
+                        href="status_resp">Visualizar status</a>
+                </td>
+                <td class="tabela-resp-nome">Lucas Martins Ribeiro</td>
+                <td class="tabela-resp-assoc">
+                    <span class="tabela-resp-aluno">Ana Clara Ferreira</span>
+                    <span class="tabela-resp-aluno">Gabriel Oliveira Rocha</span>
+                    <span class="tabela-resp-aluno">Maria Clara de Souza</span>
+                    <span class="tabela-resp-aluno">Ana Luiza Correia</span>
+                    <span class="tabela-resp-aluno">Felipe Cardoso Pinto</span>
+                    <span class="tabela-resp-aluno">Beatriz Rocha Silva</span>
+                    <span class="tabela-resp-aluno">Guilherme Sousa Costa</span>
+                    <span class="tabela-resp-aluno">Laura Rodrigues Melo</span>
+                    <span class="tabela-resp-aluno">Bruno Ferreira Barbosa</span>
+                    <span class="tabela-resp-aluno">Camila Dias Lopes</span>
+                    <span class="tabela-resp-aluno">Rodrigo Almeida Santos</span>
+                    <span class="tabela-resp-aluno">Lucas Pereira Lima</span>
+                    <span class="tabela-resp-aluno">Julia Castro Alves</span>
+                    <span class="tabela-resp-aluno">João Silva Costa</span>
+                    <span class="tabela-resp-aluno">Beatriz Souza Martins</span>
+                </td>
+                <td class="tabela-resp-assoc-btn assoc-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para alterar a lista de alunos associados com este responsável."
+                        href="admin/assoc">Alterar assoc.</a></td>
+                <!--? /*Quebras de linha necessárias pois Chrome não respeita largura fixa dos elementos da tabela 
+                https://stackoverflow.com/questions/4019604/chrome-safari-ignoring-max-width-in-table
+                Não resolvem completamente o problema, mas é o que tem pra hoje.*/ ?-->
+                <td class="tabela-resp-email">ex@emplo.com</td>
+                <td class="tabela-resp-manage-btn resp-email-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar e-mail deste responsável"
+                        href="admin/email_reset">Alterar<br>E-mail </a></td>
+                <td class="tabela-resp-manage-btn resp-pw-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar senha deste responsável" href="admin/pw_reset"> Gerar nova<br>senha
+                    </a></td>
+                <td class="tabela-resp-manage-btn resp-ban-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para excluir do sistema permanentemente este responsável, e todos os dados associados, exceto alunos."
+                        href="admin/resp_ban"> Excluir<br>responsável </a></td>
+
+            </tr>
+            <tr>
+                <td class="tabela-resp-status-btn">
+                    <a data-table="resp" class="status-resp-btn"
+                        title="Clique para visualizar simultaneamente status e eventos de todos os alunos associados com este responsável."
+                        href="status_resp">Visualizar status</a>
+                </td>
+                <td class="tabela-resp-nome">Nome Sobrenome de Souza</td>
+                <td class="tabela-resp-assoc">
+                    <span class="tabela-resp-aluno">Lucas Pereira Lima</span>
+                    <span class="tabela-resp-aluno">Bruno Ferreira Barbosa</span>
+                </td>
+                <td class="tabela-resp-assoc-btn assoc-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para alterar a lista de alunos associados com este responsável."
+                        href="admin/assoc">Alterar assoc.</a></td>
+                <!--? /*Quebras de linha necessárias pois Chrome não respeita largura fixa dos elementos da tabela 
+                https://stackoverflow.com/questions/4019604/chrome-safari-ignoring-max-width-in-table
+                Não resolvem completamente o problema, mas é o que tem pra hoje.*/ ?-->
+                <td class="tabela-resp-email">12312@sdsadas.asdas</td>
+                <td class="tabela-resp-manage-btn resp-email-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar e-mail deste responsável"
+                        href="admin/email_reset">Alterar<br>E-mail </a></td>
+                <td class="tabela-resp-manage-btn resp-pw-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar senha deste responsável" href="admin/pw_reset"> Gerar nova<br>senha
+                    </a></td>
+                <td class="tabela-resp-manage-btn resp-ban-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para excluir do sistema permanentemente este responsável, e todos os dados associados, exceto alunos."
+                        href="admin/resp_ban"> Excluir<br>responsável </a></td>
+
+            </tr>
+            <tr>
+                <td class="tabela-resp-status-btn">
+                    <a data-table="resp" class="status-resp-btn"
+                        title="Clique para visualizar simultaneamente status e eventos de todos os alunos associados com este responsável."
+                        href="status_resp">Visualizar status</a>
+                </td>
+                <td class="tabela-resp-nome">Responsável Exemplar</td>
+                <td class="tabela-resp-assoc">
+                    <span class="tabela-resp-aluno">Camila Dias Lopes</span>
+                </td>
+                <td class="tabela-resp-assoc-btn assoc-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para alterar a lista de alunos associados com este responsável."
+                        href="admin/assoc">Alterar assoc.</a></td>
+                <!--? /*Quebras de linha necessárias pois Chrome não respeita largura fixa dos elementos da tabela 
+                https://stackoverflow.com/questions/4019604/chrome-safari-ignoring-max-width-in-table
+                Não resolvem completamente o problema, mas é o que tem pra hoje.*/ ?-->
+                <td class="tabela-resp-email">ex@emplo3.com</td>
+                <td class="tabela-resp-manage-btn resp-email-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar e-mail deste responsável"
+                        href="admin/email_reset">Alterar<br>E-mail </a></td>
+                <td class="tabela-resp-manage-btn resp-pw-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar senha deste responsável" href="admin/pw_reset"> Gerar nova<br>senha
+                    </a></td>
+                <td class="tabela-resp-manage-btn resp-ban-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para excluir do sistema permanentemente este responsável, e todos os dados associados, exceto alunos."
+                        href="admin/resp_ban"> Excluir<br>responsável </a></td>
+
+            </tr>
+
+            <tr>
+                <td class="tabela-resp-status-btn">
+                    <a data-table="resp" class="status-resp-btn"
+                        title="Clique para visualizar simultaneamente status e eventos de todos os alunos associados com este responsável."
+                        href="status_resp">Visualizar status</a>
+                </td>
+                <td class="tabela-resp-nome">Roberta Ferreira Almeida</td>
+                <td class="tabela-resp-assoc">
+                    <span class="tabela-resp-aluno">Ana Clara Ferreira</span>
+                    <span class="tabela-resp-aluno">Felipe Cardoso Pinto</span>
+                </td>
+                <td class="tabela-resp-assoc-btn assoc-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para alterar a lista de alunos associados com este responsável."
+                        href="admin/assoc">Alterar assoc.</a></td>
+                <td class="tabela-resp-email">roberta.almeida@email.com</td>
+                <td class="tabela-resp-manage-btn resp-email-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar e-mail deste responsável"
+                        href="admin/email_reset">Alterar<br>E-mail</a></td>
+                <td class="tabela-resp-manage-btn resp-pw-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar senha deste responsável" href="admin/pw_reset">Gerar
+                        nova<br>senha</a></td>
+                <td class="tabela-resp-manage-btn resp-ban-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para excluir do sistema permanentemente este responsável, e todos os dados associados, exceto alunos."
+                        href="admin/resp_ban">Excluir<br>responsável</a></td>
+            </tr>
+
+            <tr>
+                <td class="tabela-resp-status-btn">
+                    <a data-table="resp" class="status-resp-btn"
+                        title="Clique para visualizar simultaneamente status e eventos de todos os alunos associados com este responsável."
+                        href="status_resp">Visualizar status</a>
+                </td>
+                <td class="tabela-resp-nome">Marcos Oliveira Santos</td>
+                <td class="tabela-resp-assoc">
+                    <span class="tabela-resp-aluno">Gabriel Oliveira Rocha</span>
+                </td>
+                <td class="tabela-resp-assoc-btn assoc-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para alterar a lista de alunos associados com este responsável."
+                        href="admin/assoc">Alterar assoc.</a></td>
+                <td class="tabela-resp-email">marcos.santos@email.com</td>
+                <td class="tabela-resp-manage-btn resp-email-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar e-mail deste responsável"
+                        href="admin/email_reset">Alterar<br>E-mail</a></td>
+                <td class="tabela-resp-manage-btn resp-pw-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar senha deste responsável" href="admin/pw_reset">Gerar
+                        nova<br>senha</a></td>
+                <td class="tabela-resp-manage-btn resp-ban-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para excluir do sistema permanentemente este responsável, e todos os dados associados, exceto alunos."
+                        href="admin/resp_ban">Excluir<br>responsável</a></td>
+            </tr>
+
+            <tr>
+                <td class="tabela-resp-status-btn">
+                    <a data-table="resp" class="status-resp-btn"
+                        title="Clique para visualizar simultaneamente status e eventos de todos os alunos associados com este responsável."
+                        href="status_resp">Visualizar status</a>
+                </td>
+                <td class="tabela-resp-nome">Cláudia Souza Barbosa</td>
+                <td class="tabela-resp-assoc">
+                    <span class="tabela-resp-aluno">Maria Clara de Souza</span>
+                    <span class="tabela-resp-aluno">Beatriz Souza Martins</span>
+                </td>
+                <td class="tabela-resp-assoc-btn assoc-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para alterar a lista de alunos associados com este responsável."
+                        href="admin/assoc">Alterar assoc.</a></td>
+                <td class="tabela-resp-email">claudia.barbosa@email.com</td>
+                <td class="tabela-resp-manage-btn resp-email-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar e-mail deste responsável"
+                        href="admin/email_reset">Alterar<br>E-mail</a></td>
+                <td class="tabela-resp-manage-btn resp-pw-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar senha deste responsável" href="admin/pw_reset">Gerar
+                        nova<br>senha</a></td>
+                <td class="tabela-resp-manage-btn resp-ban-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para excluir do sistema permanentemente este responsável, e todos os dados associados, exceto alunos."
+                        href="admin/resp_ban">Excluir<br>responsável</a></td>
+            </tr>
+
+            <tr>
+                <td class="tabela-resp-status-btn">
+                    <a data-table="resp" class="status-resp-btn"
+                        title="Clique para visualizar simultaneamente status e eventos de todos os alunos associados com este responsável."
+                        href="status_resp">Visualizar status</a>
+                </td>
+                <td class="tabela-resp-nome">Carlos Eduardo Rocha</td>
+                <td class="tabela-resp-assoc">
+                    <span class="tabela-resp-aluno">Bruno Ferreira Barbosa</span>
+                </td>
+                <td class="tabela-resp-assoc-btn assoc-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para alterar a lista de alunos associados com este responsável."
+                        href="admin/assoc">Alterar assoc.</a></td>
+                <td class="tabela-resp-email">carlos.rocha@email.com</td>
+                <td class="tabela-resp-manage-btn resp-email-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar e-mail deste responsável"
+                        href="admin/email_reset">Alterar<br>E-mail</a></td>
+                <td class="tabela-resp-manage-btn resp-pw-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar senha deste responsável" href="admin/pw_reset">Gerar
+                        nova<br>senha</a></td>
+                <td class="tabela-resp-manage-btn resp-ban-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para excluir do sistema permanentemente este responsável, e todos os dados associados, exceto alunos."
+                        href="admin/resp_ban">Excluir<br>responsável</a></td>
+            </tr>
+
+            <tr>
+                <td class="tabela-resp-status-btn">
+                    <a data-table="resp" class="status-resp-btn"
+                        title="Clique para visualizar simultaneamente status e eventos de todos os alunos associados com este responsável."
+                        href="status_resp">Visualizar status</a>
+                </td>
+                <td class="tabela-resp-nome">Patrícia Lima Costa</td>
+                <td class="tabela-resp-assoc">
+                    <span class="tabela-resp-aluno">Lucas Pereira Lima</span>
+                    <span class="tabela-resp-aluno">João Silva Costa</span>
+                </td>
+                <td class="tabela-resp-assoc-btn assoc-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para alterar a lista de alunos associados com este responsável."
+                        href="admin/assoc">Alterar assoc.</a></td>
+                <td class="tabela-resp-email">patricia.costa@email.com</td>
+                <td class="tabela-resp-manage-btn resp-email-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar e-mail deste responsável"
+                        href="admin/email_reset">Alterar<br>E-mail</a></td>
+                <td class="tabela-resp-manage-btn resp-pw-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar senha deste responsável" href="admin/pw_reset">Gerar
+                        nova<br>senha</a></td>
+                <td class="tabela-resp-manage-btn resp-ban-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para excluir do sistema permanentemente este responsável, e todos os dados associados, exceto alunos."
+                        href="admin/resp_ban">Excluir<br>responsável</a></td>
+            </tr>
+
+            <tr>
+                <td class="tabela-resp-status-btn">
+                    <a data-table="resp" class="status-resp-btn"
+                        title="Clique para visualizar simultaneamente status e eventos de todos os alunos associados com este responsável."
+                        href="status_resp">Visualizar status</a>
+                </td>
+                <td class="tabela-resp-nome">Fernanda Alves Rodrigues</td>
+                <td class="tabela-resp-assoc">
+                    <span class="tabela-resp-aluno">Camila Dias Lopes</span>
+                </td>
+                <td class="tabela-resp-assoc-btn assoc-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para alterar a lista de alunos associados com este responsável."
+                        href="admin/assoc">Alterar assoc.</a></td>
+                <td class="tabela-resp-email">fernanda.rodrigues@email.com</td>
+                <td class="tabela-resp-manage-btn resp-email-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar e-mail deste responsável"
+                        href="admin/email_reset">Alterar<br>E-mail</a></td>
+                <td class="tabela-resp-manage-btn resp-pw-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar senha deste responsável" href="admin/pw_reset">Gerar
+                        nova<br>senha</a></td>
+                <td class="tabela-resp-manage-btn resp-ban-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para excluir do sistema permanentemente este responsável, e todos os dados associados, exceto alunos."
+                        href="admin/resp_ban">Excluir<br>responsável</a></td>
+            </tr>
+
+            <tr>
+                <td class="tabela-resp-status-btn">
+                    <a data-table="resp" class="status-resp-btn"
+                        title="Clique para visualizar simultaneamente status e eventos de todos os alunos associados com este responsável."
+                        href="status_resp">Visualizar status</a>
+                </td>
+                <td class="tabela-resp-nome">Ricardo Mendes Silva</td>
+                <td class="tabela-resp-assoc">
+                    <span class="tabela-resp-aluno">Rodrigo Almeida Santos</span>
+                    <span class="tabela-resp-aluno">Beatriz Rocha Silva</span>
+                </td>
+                <td class="tabela-resp-assoc-btn assoc-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para alterar a lista de alunos associados com este responsável."
+                        href="admin/assoc">Alterar assoc.</a></td>
+                <td class="tabela-resp-email">ricardo.silva@email.com</td>
+                <td class="tabela-resp-manage-btn resp-email-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar e-mail deste responsável"
+                        href="admin/email_reset">Alterar<br>E-mail</a></td>
+                <td class="tabela-resp-manage-btn resp-pw-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar senha deste responsável" href="admin/pw_reset">Gerar
+                        nova<br>senha</a></td>
+                <td class="tabela-resp-manage-btn resp-ban-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para excluir do sistema permanentemente este responsável, e todos os dados associados, exceto alunos."
+                        href="admin/resp_ban">Excluir<br>responsável</a></td>
+            </tr>
+            <tr>
+                <td class="tabela-resp-status-btn">
+                    <a data-table="resp" class="status-resp-btn"
+                        title="Clique para visualizar simultaneamente status e eventos de todos os alunos associados com este responsável."
+                        href="status_resp">Visualizar status</a>
+                </td>
+                <td class="tabela-resp-nome">Respons Avel da Silva</td>
+                <td class="tabela-resp-assoc">
+                    <span class="tabela-resp-aluno">João Silva Costa</span>
+                    <span class="tabela-resp-aluno">Beatriz Rocha Silva</span>
+                    <span class="tabela-resp-aluno">Lucas Pereira Lima</span>
+                    <span class="tabela-resp-aluno">Julia Castro Alves</span>
+                    <span class="tabela-resp-aluno">Ana Clara Ferreira</span>
+                    <span class="tabela-resp-aluno">Ana Luiza Correia</span>
+                    <span class="tabela-resp-aluno">Bruno Ferreira Barbosa</span>
+                    <span class="tabela-resp-aluno">Camila Dias Lopes</span>
+                    <span class="tabela-resp-aluno">Felipe Cardoso Pinto</span>
+                    <span class="tabela-resp-aluno">Gabriel Oliveira Rocha</span>
+                    <span class="tabela-resp-aluno">Guilherme Sousa Costa</span>
+                    <span class="tabela-resp-aluno">Laura Rodrigues Melo</span>
+                    <span class="tabela-resp-aluno">Maria Clara de Souza</span>
+                    <span class="tabela-resp-aluno">Rodrigo Almeida Santos</span>
+                    <span class="tabela-resp-aluno">Beatriz Souza Martins</span>
+                </td>
+                <td class="tabela-resp-assoc-btn assoc-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para alterar a lista de alunos associados com este responsável."
+                        href="admin/assoc">Alterar assoc.</a></td>
+                <!--? /*Quebras de linha necessárias pois Chrome não respeita largura fixa dos elementos da tabela 
+                https://stackoverflow.com/questions/4019604/chrome-safari-ignoring-max-width-in-table
+                Não resolvem completamente o problema, mas é o que tem pra hoje.*/ ?-->
+                <td class="tabela-resp-email">resp@onsa.vel</td>
+                <td class="tabela-resp-manage-btn resp-email-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar e-mail deste responsável"
+                        href="admin/email_reset">Alterar<br>E-mail </a></td>
+                <td class="tabela-resp-manage-btn resp-pw-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar senha deste responsável" href="admin/pw_reset"> Gerar nova<br>senha
+                    </a></td>
+                <td class="tabela-resp-manage-btn resp-ban-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para excluir do sistema permanentemente este responsável, e todos os dados associados, exceto alunos."
+                        href="admin/resp_ban"> Excluir<br>responsável </a></td>
+
+            </tr>
+            <tr>
+                <td class="tabela-resp-status-btn">
+                    <a data-table="resp" class="status-resp-btn"
+                        title="Clique para visualizar simultaneamente status e eventos de todos os alunos associados com este responsável."
+                        href="status_resp">Visualizar status</a>
+                </td>
+                <td class="tabela-resp-nome">Lucas Martins Ribeiro</td>
+                <td class="tabela-resp-assoc">
+                    <span class="tabela-resp-aluno">Ana Clara Ferreira</span>
+                    <span class="tabela-resp-aluno">Gabriel Oliveira Rocha</span>
+                    <span class="tabela-resp-aluno">Maria Clara de Souza</span>
+                    <span class="tabela-resp-aluno">Ana Luiza Correia</span>
+                    <span class="tabela-resp-aluno">Felipe Cardoso Pinto</span>
+                    <span class="tabela-resp-aluno">Beatriz Rocha Silva</span>
+                    <span class="tabela-resp-aluno">Guilherme Sousa Costa</span>
+                    <span class="tabela-resp-aluno">Laura Rodrigues Melo</span>
+                    <span class="tabela-resp-aluno">Bruno Ferreira Barbosa</span>
+                    <span class="tabela-resp-aluno">Camila Dias Lopes</span>
+                    <span class="tabela-resp-aluno">Rodrigo Almeida Santos</span>
+                    <span class="tabela-resp-aluno">Lucas Pereira Lima</span>
+                    <span class="tabela-resp-aluno">Julia Castro Alves</span>
+                    <span class="tabela-resp-aluno">João Silva Costa</span>
+                    <span class="tabela-resp-aluno">Beatriz Souza Martins</span>
+                </td>
+                <td class="tabela-resp-assoc-btn assoc-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para alterar a lista de alunos associados com este responsável."
+                        href="admin/assoc">Alterar assoc.</a></td>
+                <!--? /*Quebras de linha necessárias pois Chrome não respeita largura fixa dos elementos da tabela 
+                https://stackoverflow.com/questions/4019604/chrome-safari-ignoring-max-width-in-table
+                Não resolvem completamente o problema, mas é o que tem pra hoje.*/ ?-->
+                <td class="tabela-resp-email">ex@emplo.com</td>
+                <td class="tabela-resp-manage-btn resp-email-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar e-mail deste responsável"
+                        href="admin/email_reset">Alterar<br>E-mail </a></td>
+                <td class="tabela-resp-manage-btn resp-pw-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar senha deste responsável" href="admin/pw_reset"> Gerar nova<br>senha
+                    </a></td>
+                <td class="tabela-resp-manage-btn resp-ban-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para excluir do sistema permanentemente este responsável, e todos os dados associados, exceto alunos."
+                        href="admin/resp_ban"> Excluir<br>responsável </a></td>
+
+            </tr>
+            <tr>
+                <td class="tabela-resp-status-btn">
+                    <a data-table="resp" class="status-resp-btn"
+                        title="Clique para visualizar simultaneamente status e eventos de todos os alunos associados com este responsável."
+                        href="status_resp">Visualizar status</a>
+                </td>
+                <td class="tabela-resp-nome">Nome Sobrenome de Souza</td>
+                <td class="tabela-resp-assoc">
+                    <span class="tabela-resp-aluno">Lucas Pereira Lima</span>
+                    <span class="tabela-resp-aluno">Bruno Ferreira Barbosa</span>
+                </td>
+                <td class="tabela-resp-assoc-btn assoc-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para alterar a lista de alunos associados com este responsável."
+                        href="admin/assoc">Alterar assoc.</a></td>
+                <!--? /*Quebras de linha necessárias pois Chrome não respeita largura fixa dos elementos da tabela 
+                https://stackoverflow.com/questions/4019604/chrome-safari-ignoring-max-width-in-table
+                Não resolvem completamente o problema, mas é o que tem pra hoje.*/ ?-->
+                <td class="tabela-resp-email">12312@sdsadas.asdas</td>
+                <td class="tabela-resp-manage-btn resp-email-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar e-mail deste responsável"
+                        href="admin/email_reset">Alterar<br>E-mail </a></td>
+                <td class="tabela-resp-manage-btn resp-pw-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar senha deste responsável" href="admin/pw_reset"> Gerar nova<br>senha
+                    </a></td>
+                <td class="tabela-resp-manage-btn resp-ban-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para excluir do sistema permanentemente este responsável, e todos os dados associados, exceto alunos."
+                        href="admin/resp_ban"> Excluir<br>responsável </a></td>
+
+            </tr>
+            <tr>
+                <td class="tabela-resp-status-btn">
+                    <a data-table="resp" class="status-resp-btn"
+                        title="Clique para visualizar simultaneamente status e eventos de todos os alunos associados com este responsável."
+                        href="status_resp">Visualizar status</a>
+                </td>
+                <td class="tabela-resp-nome">Responsável Exemplar</td>
+                <td class="tabela-resp-assoc">
+                    <span class="tabela-resp-aluno">Camila Dias Lopes</span>
+                </td>
+                <td class="tabela-resp-assoc-btn assoc-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para alterar a lista de alunos associados com este responsável."
+                        href="admin/assoc">Alterar assoc.</a></td>
+                <!--? /*Quebras de linha necessárias pois Chrome não respeita largura fixa dos elementos da tabela 
+                https://stackoverflow.com/questions/4019604/chrome-safari-ignoring-max-width-in-table
+                Não resolvem completamente o problema, mas é o que tem pra hoje.*/ ?-->
+                <td class="tabela-resp-email">ex@emplo3.com</td>
+                <td class="tabela-resp-manage-btn resp-email-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar e-mail deste responsável"
+                        href="admin/email_reset">Alterar<br>E-mail </a></td>
+                <td class="tabela-resp-manage-btn resp-pw-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar senha deste responsável" href="admin/pw_reset"> Gerar nova<br>senha
+                    </a></td>
+                <td class="tabela-resp-manage-btn resp-ban-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para excluir do sistema permanentemente este responsável, e todos os dados associados, exceto alunos."
+                        href="admin/resp_ban"> Excluir<br>responsável </a></td>
+
+            </tr>
+
+            <tr>
+                <td class="tabela-resp-status-btn">
+                    <a data-table="resp" class="status-resp-btn"
+                        title="Clique para visualizar simultaneamente status e eventos de todos os alunos associados com este responsável."
+                        href="status_resp">Visualizar status</a>
+                </td>
+                <td class="tabela-resp-nome">Roberta Ferreira Almeida</td>
+                <td class="tabela-resp-assoc">
+                    <span class="tabela-resp-aluno">Ana Clara Ferreira</span>
+                    <span class="tabela-resp-aluno">Felipe Cardoso Pinto</span>
+                </td>
+                <td class="tabela-resp-assoc-btn assoc-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para alterar a lista de alunos associados com este responsável."
+                        href="admin/assoc">Alterar assoc.</a></td>
+                <td class="tabela-resp-email">roberta.almeida@email.com</td>
+                <td class="tabela-resp-manage-btn resp-email-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar e-mail deste responsável"
+                        href="admin/email_reset">Alterar<br>E-mail</a></td>
+                <td class="tabela-resp-manage-btn resp-pw-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar senha deste responsável" href="admin/pw_reset">Gerar
+                        nova<br>senha</a></td>
+                <td class="tabela-resp-manage-btn resp-ban-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para excluir do sistema permanentemente este responsável, e todos os dados associados, exceto alunos."
+                        href="admin/resp_ban">Excluir<br>responsável</a></td>
+            </tr>
+
+            <tr>
+                <td class="tabela-resp-status-btn">
+                    <a data-table="resp" class="status-resp-btn"
+                        title="Clique para visualizar simultaneamente status e eventos de todos os alunos associados com este responsável."
+                        href="status_resp">Visualizar status</a>
+                </td>
+                <td class="tabela-resp-nome">Marcos Oliveira Santos</td>
+                <td class="tabela-resp-assoc">
+                    <span class="tabela-resp-aluno">Gabriel Oliveira Rocha</span>
+                </td>
+                <td class="tabela-resp-assoc-btn assoc-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para alterar a lista de alunos associados com este responsável."
+                        href="admin/assoc">Alterar assoc.</a></td>
+                <td class="tabela-resp-email">marcos.santos@email.com</td>
+                <td class="tabela-resp-manage-btn resp-email-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar e-mail deste responsável"
+                        href="admin/email_reset">Alterar<br>E-mail</a></td>
+                <td class="tabela-resp-manage-btn resp-pw-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar senha deste responsável" href="admin/pw_reset">Gerar
+                        nova<br>senha</a></td>
+                <td class="tabela-resp-manage-btn resp-ban-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para excluir do sistema permanentemente este responsável, e todos os dados associados, exceto alunos."
+                        href="admin/resp_ban">Excluir<br>responsável</a></td>
+            </tr>
+
+            <tr>
+                <td class="tabela-resp-status-btn">
+                    <a data-table="resp" class="status-resp-btn"
+                        title="Clique para visualizar simultaneamente status e eventos de todos os alunos associados com este responsável."
+                        href="status_resp">Visualizar status</a>
+                </td>
+                <td class="tabela-resp-nome">Cláudia Souza Barbosa</td>
+                <td class="tabela-resp-assoc">
+                    <span class="tabela-resp-aluno">Maria Clara de Souza</span>
+                    <span class="tabela-resp-aluno">Beatriz Souza Martins</span>
+                </td>
+                <td class="tabela-resp-assoc-btn assoc-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para alterar a lista de alunos associados com este responsável."
+                        href="admin/assoc">Alterar assoc.</a></td>
+                <td class="tabela-resp-email">claudia.barbosa@email.com</td>
+                <td class="tabela-resp-manage-btn resp-email-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar e-mail deste responsável"
+                        href="admin/email_reset">Alterar<br>E-mail</a></td>
+                <td class="tabela-resp-manage-btn resp-pw-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar senha deste responsável" href="admin/pw_reset">Gerar
+                        nova<br>senha</a></td>
+                <td class="tabela-resp-manage-btn resp-ban-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para excluir do sistema permanentemente este responsável, e todos os dados associados, exceto alunos."
+                        href="admin/resp_ban">Excluir<br>responsável</a></td>
+            </tr>
+
+            <tr>
+                <td class="tabela-resp-status-btn">
+                    <a data-table="resp" class="status-resp-btn"
+                        title="Clique para visualizar simultaneamente status e eventos de todos os alunos associados com este responsável."
+                        href="status_resp">Visualizar status</a>
+                </td>
+                <td class="tabela-resp-nome">Carlos Eduardo Rocha</td>
+                <td class="tabela-resp-assoc">
+                    <span class="tabela-resp-aluno">Bruno Ferreira Barbosa</span>
+                </td>
+                <td class="tabela-resp-assoc-btn assoc-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para alterar a lista de alunos associados com este responsável."
+                        href="admin/assoc">Alterar assoc.</a></td>
+                <td class="tabela-resp-email">carlos.rocha@email.com</td>
+                <td class="tabela-resp-manage-btn resp-email-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar e-mail deste responsável"
+                        href="admin/email_reset">Alterar<br>E-mail</a></td>
+                <td class="tabela-resp-manage-btn resp-pw-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar senha deste responsável" href="admin/pw_reset">Gerar
+                        nova<br>senha</a></td>
+                <td class="tabela-resp-manage-btn resp-ban-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para excluir do sistema permanentemente este responsável, e todos os dados associados, exceto alunos."
+                        href="admin/resp_ban">Excluir<br>responsável</a></td>
+            </tr>
+
+            <tr>
+                <td class="tabela-resp-status-btn">
+                    <a data-table="resp" class="status-resp-btn"
+                        title="Clique para visualizar simultaneamente status e eventos de todos os alunos associados com este responsável."
+                        href="status_resp">Visualizar status</a>
+                </td>
+                <td class="tabela-resp-nome">Patrícia Lima Costa</td>
+                <td class="tabela-resp-assoc">
+                    <span class="tabela-resp-aluno">Lucas Pereira Lima</span>
+                    <span class="tabela-resp-aluno">João Silva Costa</span>
+                </td>
+                <td class="tabela-resp-assoc-btn assoc-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para alterar a lista de alunos associados com este responsável."
+                        href="admin/assoc">Alterar assoc.</a></td>
+                <td class="tabela-resp-email">patricia.costa@email.com</td>
+                <td class="tabela-resp-manage-btn resp-email-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar e-mail deste responsável"
+                        href="admin/email_reset">Alterar<br>E-mail</a></td>
+                <td class="tabela-resp-manage-btn resp-pw-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar senha deste responsável" href="admin/pw_reset">Gerar
+                        nova<br>senha</a></td>
+                <td class="tabela-resp-manage-btn resp-ban-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para excluir do sistema permanentemente este responsável, e todos os dados associados, exceto alunos."
+                        href="admin/resp_ban">Excluir<br>responsável</a></td>
+            </tr>
+
+            <tr>
+                <td class="tabela-resp-status-btn">
+                    <a data-table="resp" class="status-resp-btn"
+                        title="Clique para visualizar simultaneamente status e eventos de todos os alunos associados com este responsável."
+                        href="status_resp">Visualizar status</a>
+                </td>
+                <td class="tabela-resp-nome">Fernanda Alves Rodrigues</td>
+                <td class="tabela-resp-assoc">
+                    <span class="tabela-resp-aluno">Camila Dias Lopes</span>
+                </td>
+                <td class="tabela-resp-assoc-btn assoc-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para alterar a lista de alunos associados com este responsável."
+                        href="admin/assoc">Alterar assoc.</a></td>
+                <td class="tabela-resp-email">fernanda.rodrigues@email.com</td>
+                <td class="tabela-resp-manage-btn resp-email-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar e-mail deste responsável"
+                        href="admin/email_reset">Alterar<br>E-mail</a></td>
+                <td class="tabela-resp-manage-btn resp-pw-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar senha deste responsável" href="admin/pw_reset">Gerar
+                        nova<br>senha</a></td>
+                <td class="tabela-resp-manage-btn resp-ban-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para excluir do sistema permanentemente este responsável, e todos os dados associados, exceto alunos."
+                        href="admin/resp_ban">Excluir<br>responsável</a></td>
+            </tr>
+
+            <tr>
+                <td class="tabela-resp-status-btn">
+                    <a data-table="resp" class="status-resp-btn"
+                        title="Clique para visualizar simultaneamente status e eventos de todos os alunos associados com este responsável."
+                        href="status_resp">Visualizar status</a>
+                </td>
+                <td class="tabela-resp-nome">Ricardo Mendes Silva</td>
+                <td class="tabela-resp-assoc">
+                    <span class="tabela-resp-aluno">Rodrigo Almeida Santos</span>
+                    <span class="tabela-resp-aluno">Beatriz Rocha Silva</span>
+                </td>
+                <td class="tabela-resp-assoc-btn assoc-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para alterar a lista de alunos associados com este responsável."
+                        href="admin/assoc">Alterar assoc.</a></td>
+                <td class="tabela-resp-email">ricardo.silva@email.com</td>
+                <td class="tabela-resp-manage-btn resp-email-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar e-mail deste responsável"
+                        href="admin/email_reset">Alterar<br>E-mail</a></td>
+                <td class="tabela-resp-manage-btn resp-pw-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar senha deste responsável" href="admin/pw_reset">Gerar
+                        nova<br>senha</a></td>
+                <td class="tabela-resp-manage-btn resp-ban-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para excluir do sistema permanentemente este responsável, e todos os dados associados, exceto alunos."
+                        href="admin/resp_ban">Excluir<br>responsável</a></td>
+            </tr>
+            <tr>
+                <td class="tabela-resp-status-btn">
+                    <a data-table="resp" class="status-resp-btn"
+                        title="Clique para visualizar simultaneamente status e eventos de todos os alunos associados com este responsável."
+                        href="status_resp">Visualizar status</a>
+                </td>
+                <td class="tabela-resp-nome">Respons Avel da Silva</td>
+                <td class="tabela-resp-assoc">
+                    <span class="tabela-resp-aluno">João Silva Costa</span>
+                    <span class="tabela-resp-aluno">Beatriz Rocha Silva</span>
+                    <span class="tabela-resp-aluno">Lucas Pereira Lima</span>
+                    <span class="tabela-resp-aluno">Julia Castro Alves</span>
+                    <span class="tabela-resp-aluno">Ana Clara Ferreira</span>
+                    <span class="tabela-resp-aluno">Ana Luiza Correia</span>
+                    <span class="tabela-resp-aluno">Bruno Ferreira Barbosa</span>
+                    <span class="tabela-resp-aluno">Camila Dias Lopes</span>
+                    <span class="tabela-resp-aluno">Felipe Cardoso Pinto</span>
+                    <span class="tabela-resp-aluno">Gabriel Oliveira Rocha</span>
+                    <span class="tabela-resp-aluno">Guilherme Sousa Costa</span>
+                    <span class="tabela-resp-aluno">Laura Rodrigues Melo</span>
+                    <span class="tabela-resp-aluno">Maria Clara de Souza</span>
+                    <span class="tabela-resp-aluno">Rodrigo Almeida Santos</span>
+                    <span class="tabela-resp-aluno">Beatriz Souza Martins</span>
+                </td>
+                <td class="tabela-resp-assoc-btn assoc-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para alterar a lista de alunos associados com este responsável."
+                        href="admin/assoc">Alterar assoc.</a></td>
+                <!--? /*Quebras de linha necessárias pois Chrome não respeita largura fixa dos elementos da tabela 
+                https://stackoverflow.com/questions/4019604/chrome-safari-ignoring-max-width-in-table
+                Não resolvem completamente o problema, mas é o que tem pra hoje.*/ ?-->
+                <td class="tabela-resp-email">resp@onsa.vel</td>
+                <td class="tabela-resp-manage-btn resp-email-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar e-mail deste responsável"
+                        href="admin/email_reset">Alterar<br>E-mail </a></td>
+                <td class="tabela-resp-manage-btn resp-pw-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para atualizar senha deste responsável" href="admin/pw_reset"> Gerar nova<br>senha
+                    </a></td>
+                <td class="tabela-resp-manage-btn resp-ban-btn"><a data-table="resp" class="modal-small"
+                        title="Clique para excluir do sistema permanentemente este responsável, e todos os dados associados, exceto alunos."
+                        href="admin/resp_ban"> Excluir<br>responsável </a></td>
+
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

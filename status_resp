@@ -1,0 +1,565 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body><div id="status-resp-header">
+    <table class="status-resp-header-table">
+        <tbody>
+            <tr><td><strong>Responsável: </strong></td><td>Lucas Martins Ribeiro </td></tr>
+            <!-- <tr><td><strong>CPF:         </strong><td>12345678909          </tr> -->
+            <tr><td><strong>E-Mail:      </strong></td><td>ex@emplo.com        </td></tr>
+        </tbody>
+    </table>
+</div>
+<div id="card-wrapper"><div class="aluno-card">
+    <div class="aluno-status">
+        <table class="status-aluno-header-table">
+            <tbody>
+                <tr><td><strong>Aluno:</strong>     </td><td>Ana Clara Ferreira  </td></tr>
+                <tr><td><strong>Turma:</strong>     </td><td>INF1 2022  </td></tr>
+                <tr><td><strong>Status:</strong>    </td><td>
+                Ausente há 458 dias                </td></tr>  <!-- alterar para indicar tempo de ausência --> 
+                
+            </tbody>
+        </table>   
+    </div>
+    <h1>Eventos</h1>
+    <div class="scrollable">
+        <table>
+            <tbody><tr>
+                <th>Data / Hora</th>
+                <th>Tipo</th>
+            </tr>
+                        <tr>
+                <td>qui. 23/05 às 13:30</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>qui. 23/05 às 05:30</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                        <tr>
+                <td>qua. 22/05 às 13:30</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>qua. 22/05 às 05:30</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                        <tr>
+                <td>ter. 21/05 às 13:30</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>ter. 21/05 às 05:30</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                    </tbody></table>
+    </div>
+</div>
+<div class="aluno-card">
+    <div class="aluno-status">
+        <table class="status-aluno-header-table">
+            <tbody>
+                <tr><td><strong>Aluno:</strong>     </td><td>Gabriel Oliveira Rocha  </td></tr>
+                <tr><td><strong>Turma:</strong>     </td><td>INF1 2022  </td></tr>
+                <tr><td><strong>Status:</strong>    </td><td>
+                Ausente há 461 dias                </td></tr>  <!-- alterar para indicar tempo de ausência --> 
+                
+            </tbody>
+        </table>   
+    </div>
+    <h1>Eventos</h1>
+    <div class="scrollable">
+        <table>
+            <tbody><tr>
+                <th>Data / Hora</th>
+                <th>Tipo</th>
+            </tr>
+                        <tr>
+                <td>seg. 20/05 às 14:15</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>seg. 20/05 às 05:45</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                        <tr>
+                <td>dom. 19/05 às 14:15</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>dom. 19/05 às 05:45</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                        <tr>
+                <td>sáb. 18/05 às 14:15</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>sáb. 18/05 às 05:45</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                    </tbody></table>
+    </div>
+</div>
+<div class="aluno-card">
+    <div class="aluno-status">
+        <table class="status-aluno-header-table">
+            <tbody>
+                <tr><td><strong>Aluno:</strong>     </td><td>Maria Clara de Souza  </td></tr>
+                <tr><td><strong>Turma:</strong>     </td><td>INF1 2022  </td></tr>
+                <tr><td><strong>Status:</strong>    </td><td>
+                Ausente há 457 dias                </td></tr>  <!-- alterar para indicar tempo de ausência --> 
+                
+            </tbody>
+        </table>   
+    </div>
+    <h1>Eventos</h1>
+    <div class="scrollable">
+        <table>
+            <tbody><tr>
+                <th>Data / Hora</th>
+                <th>Tipo</th>
+            </tr>
+                        <tr>
+                <td>sex. 24/05 às 04:48</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>qui. 23/05 às 16:48</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                    </tbody></table>
+    </div>
+</div>
+<div class="aluno-card">
+    <div class="aluno-status">
+        <table class="status-aluno-header-table">
+            <tbody>
+                <tr><td><strong>Aluno:</strong>     </td><td>Ana Luiza Correia  </td></tr>
+                <tr><td><strong>Turma:</strong>     </td><td>INF1 2022  </td></tr>
+                <tr><td><strong>Status:</strong>    </td><td>
+                Ausente há 459 dias                </td></tr>  <!-- alterar para indicar tempo de ausência --> 
+                
+            </tbody>
+        </table>   
+    </div>
+    <h1>Eventos</h1>
+    <div class="scrollable">
+        <table>
+            <tbody><tr>
+                <th>Data / Hora</th>
+                <th>Tipo</th>
+            </tr>
+                        <tr>
+                <td>qua. 22/05 às 16:48</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>ter. 21/05 às 16:48</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                    </tbody></table>
+    </div>
+</div>
+<div class="aluno-card">
+    <div class="aluno-status">
+        <table class="status-aluno-header-table">
+            <tbody>
+                <tr><td><strong>Aluno:</strong>     </td><td>Felipe Cardoso Pinto  </td></tr>
+                <tr><td><strong>Turma:</strong>     </td><td>INF1 2022  </td></tr>
+                <tr><td><strong>Status:</strong>    </td><td>
+                Presente                </td></tr>  <!-- alterar para indicar tempo de ausência --> 
+                
+            </tbody>
+        </table>   
+    </div>
+    <h1>Eventos</h1>
+    <div class="scrollable">
+        <table>
+            <tbody><tr>
+                <th>Data / Hora</th>
+                <th>Tipo</th>
+            </tr>
+                        <tr>
+                <td>sáb. 19/10 às 18:20</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                        <tr>
+                <td>sáb. 19/10 às 18:20</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>sáb. 19/10 às 18:15</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                        <tr>
+                <td>ter. 21/05 às 16:48</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>seg. 20/05 às 16:48</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                    </tbody></table>
+    </div>
+</div>
+<div class="aluno-card">
+    <div class="aluno-status">
+        <table class="status-aluno-header-table">
+            <tbody>
+                <tr><td><strong>Aluno:</strong>     </td><td>Beatriz Rocha Silva  </td></tr>
+                <tr><td><strong>Turma:</strong>     </td><td>INF1 2022  </td></tr>
+                <tr><td><strong>Status:</strong>    </td><td>
+                Presente                </td></tr>  <!-- alterar para indicar tempo de ausência --> 
+                
+            </tbody>
+        </table>   
+    </div>
+    <h1>Eventos</h1>
+    <div class="scrollable">
+        <table>
+            <tbody><tr>
+                <th>Data / Hora</th>
+                <th>Tipo</th>
+            </tr>
+                        <tr>
+                <td>dom. 20/10 às 16:27</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                        <tr>
+                <td>seg. 20/05 às 16:48</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>dom. 19/05 às 16:48</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                    </tbody></table>
+    </div>
+</div>
+<div class="aluno-card">
+    <div class="aluno-status">
+        <table class="status-aluno-header-table">
+            <tbody>
+                <tr><td><strong>Aluno:</strong>     </td><td>Guilherme Sousa Costa  </td></tr>
+                <tr><td><strong>Turma:</strong>     </td><td>INF1 2022  </td></tr>
+                <tr><td><strong>Status:</strong>    </td><td>
+                Ausente há 462 dias                </td></tr>  <!-- alterar para indicar tempo de ausência --> 
+                
+            </tbody>
+        </table>   
+    </div>
+    <h1>Eventos</h1>
+    <div class="scrollable">
+        <table>
+            <tbody><tr>
+                <th>Data / Hora</th>
+                <th>Tipo</th>
+            </tr>
+                        <tr>
+                <td>dom. 19/05 às 16:48</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>sáb. 18/05 às 16:48</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                    </tbody></table>
+    </div>
+</div>
+<div class="aluno-card">
+    <div class="aluno-status">
+        <table class="status-aluno-header-table">
+            <tbody>
+                <tr><td><strong>Aluno:</strong>     </td><td>Laura Rodrigues Melo  </td></tr>
+                <tr><td><strong>Turma:</strong>     </td><td>INF1 2022  </td></tr>
+                <tr><td><strong>Status:</strong>    </td><td>
+                Presente                </td></tr>  <!-- alterar para indicar tempo de ausência --> 
+                
+            </tbody>
+        </table>   
+    </div>
+    <h1>Eventos</h1>
+    <div class="scrollable">
+        <table>
+            <tbody><tr>
+                <th>Data / Hora</th>
+                <th>Tipo</th>
+            </tr>
+                        <tr>
+                <td>sáb. 19/10 às 21:05</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                        <tr>
+                <td>sáb. 19/10 às 18:30</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>sáb. 19/10 às 18:29</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                        <tr>
+                <td>sáb. 18/05 às 16:48</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>sex. 17/05 às 16:48</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                    </tbody></table>
+    </div>
+</div>
+<div class="aluno-card">
+    <div class="aluno-status">
+        <table class="status-aluno-header-table">
+            <tbody>
+                <tr><td><strong>Aluno:</strong>     </td><td>Bruno Ferreira Barbosa  </td></tr>
+                <tr><td><strong>Turma:</strong>     </td><td>INF1 2022  </td></tr>
+                <tr><td><strong>Status:</strong>    </td><td>
+                Presente                </td></tr>  <!-- alterar para indicar tempo de ausência --> 
+                
+            </tbody>
+        </table>   
+    </div>
+    <h1>Eventos</h1>
+    <div class="scrollable">
+        <table>
+            <tbody><tr>
+                <th>Data / Hora</th>
+                <th>Tipo</th>
+            </tr>
+                        <tr>
+                <td>sex. 17/05 às 16:48</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                    </tbody></table>
+    </div>
+</div>
+<div class="aluno-card">
+    <div class="aluno-status">
+        <table class="status-aluno-header-table">
+            <tbody>
+                <tr><td><strong>Aluno:</strong>     </td><td>Camila Dias Lopes  </td></tr>
+                <tr><td><strong>Turma:</strong>     </td><td>INF1 2022  </td></tr>
+                <tr><td><strong>Status:</strong>    </td><td>
+                Nenhum evento de entrada ou saída                </td></tr>  <!-- alterar para indicar tempo de ausência --> 
+                
+            </tbody>
+        </table>   
+    </div>
+    <h1>Eventos</h1>
+    <div class="scrollable">
+        <table>
+            <tbody><tr>
+                <th>Data / Hora</th>
+                <th>Tipo</th>
+            </tr>
+                    </tbody></table>
+    </div>
+</div>
+<div class="aluno-card">
+    <div class="aluno-status">
+        <table class="status-aluno-header-table">
+            <tbody>
+                <tr><td><strong>Aluno:</strong>     </td><td>Rodrigo Almeida Santos  </td></tr>
+                <tr><td><strong>Turma:</strong>     </td><td>INF1 2022  </td></tr>
+                <tr><td><strong>Status:</strong>    </td><td>
+                Nenhum evento de entrada ou saída                </td></tr>  <!-- alterar para indicar tempo de ausência --> 
+                
+            </tbody>
+        </table>   
+    </div>
+    <h1>Eventos</h1>
+    <div class="scrollable">
+        <table>
+            <tbody><tr>
+                <th>Data / Hora</th>
+                <th>Tipo</th>
+            </tr>
+                    </tbody></table>
+    </div>
+</div>
+<div class="aluno-card">
+    <div class="aluno-status">
+        <table class="status-aluno-header-table">
+            <tbody>
+                <tr><td><strong>Aluno:</strong>     </td><td>Lucas Pereira Lima  </td></tr>
+                <tr><td><strong>Turma:</strong>     </td><td>ADM1 2022  </td></tr>
+                <tr><td><strong>Status:</strong>    </td><td>
+                Ausente há 459 dias                </td></tr>  <!-- alterar para indicar tempo de ausência --> 
+                
+            </tbody>
+        </table>   
+    </div>
+    <h1>Eventos</h1>
+    <div class="scrollable">
+        <table>
+            <tbody><tr>
+                <th>Data / Hora</th>
+                <th>Tipo</th>
+            </tr>
+                        <tr>
+                <td>qua. 22/05 às 15:00</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>qua. 22/05 às 06:00</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                        <tr>
+                <td>ter. 21/05 às 15:00</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>ter. 21/05 às 06:00</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                        <tr>
+                <td>seg. 20/05 às 15:00</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>seg. 20/05 às 06:00</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                    </tbody></table>
+    </div>
+</div>
+<div class="aluno-card">
+    <div class="aluno-status">
+        <table class="status-aluno-header-table">
+            <tbody>
+                <tr><td><strong>Aluno:</strong>     </td><td>Julia Castro Alves  </td></tr>
+                <tr><td><strong>Turma:</strong>     </td><td>ADM1 2022  </td></tr>
+                <tr><td><strong>Status:</strong>    </td><td>
+                Ausente há 462 dias                </td></tr>  <!-- alterar para indicar tempo de ausência --> 
+                
+            </tbody>
+        </table>   
+    </div>
+    <h1>Eventos</h1>
+    <div class="scrollable">
+        <table>
+            <tbody><tr>
+                <th>Data / Hora</th>
+                <th>Tipo</th>
+            </tr>
+                        <tr>
+                <td>dom. 19/05 às 15:30</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>dom. 19/05 às 06:30</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                        <tr>
+                <td>sáb. 18/05 às 15:30</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>sáb. 18/05 às 06:30</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                        <tr>
+                <td>sex. 17/05 às 15:30</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>sex. 17/05 às 06:30</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                    </tbody></table>
+    </div>
+</div>
+<div class="aluno-card">
+    <div class="aluno-status">
+        <table class="status-aluno-header-table">
+            <tbody>
+                <tr><td><strong>Aluno:</strong>     </td><td>João Silva Costa  </td></tr>
+                <tr><td><strong>Turma:</strong>     </td><td>INF1 2023  </td></tr>
+                <tr><td><strong>Status:</strong>    </td><td>
+                Ausente há 457 dias                </td></tr>  <!-- alterar para indicar tempo de ausência --> 
+                
+            </tbody>
+        </table>   
+    </div>
+    <h1>Eventos</h1>
+    <div class="scrollable">
+        <table>
+            <tbody><tr>
+                <th>Data / Hora</th>
+                <th>Tipo</th>
+            </tr>
+                        <tr>
+                <td>sex. 24/05 às 14:00</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>sex. 24/05 às 05:00</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                        <tr>
+                <td>qui. 23/05 às 14:00</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>qui. 23/05 às 05:00</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                        <tr>
+                <td>qua. 22/05 às 14:00</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>qua. 22/05 às 05:00</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                    </tbody></table>
+    </div>
+</div>
+<div class="aluno-card">
+    <div class="aluno-status">
+        <table class="status-aluno-header-table">
+            <tbody>
+                <tr><td><strong>Aluno:</strong>     </td><td>Beatriz Souza Martins  </td></tr>
+                <tr><td><strong>Turma:</strong>     </td><td>INF1 2023  </td></tr>
+                <tr><td><strong>Status:</strong>    </td><td>
+                Ausente há 460 dias                </td></tr>  <!-- alterar para indicar tempo de ausência --> 
+                
+            </tbody>
+        </table>   
+    </div>
+    <h1>Eventos</h1>
+    <div class="scrollable">
+        <table>
+            <tbody><tr>
+                <th>Data / Hora</th>
+                <th>Tipo</th>
+            </tr>
+                        <tr>
+                <td>ter. 21/05 às 13:45</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>ter. 21/05 às 05:15</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                        <tr>
+                <td>seg. 20/05 às 13:45</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>seg. 20/05 às 05:15</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                        <tr>
+                <td>dom. 19/05 às 13:45</td>
+                <td class="Saída">Saída</td>
+            </tr>
+                        <tr>
+                <td>dom. 19/05 às 05:15</td>
+                <td class="Entrada">Entrada</td>
+            </tr>
+                    </tbody></table>
+    </div>
+</div>
+</div></body></html>

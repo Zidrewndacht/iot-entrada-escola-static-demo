@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente MQTT para gravação de tag</title>
+    <script src="/mqtt.5.6.1.min.js"></script>      
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/style_mqtt.css">
+</head>
+<body class="waiting">
+<div class="modal-status">
+    <h1>Gravar nova tag</h1>
+</div>
+<div class="mqtt-content-wrapper"> 
+    <div id="aluno-info">
+        <!-- converter em tabela? -->
+         <table>
+            <tbody>
+                <tr><td><strong>Aluno:</strong>     <td>Ana Clara Ferreira  </tr>
+                <tr><td><strong>Turma:</strong>     <td>INF1 2022  </tr>
+                <tr><td><strong>Matrícula:</strong> <td>112384   </tr>
+                <tr><td><strong>Tag ID:</strong>    <td>323496A9 </tr>
+            </tbody>
+         </table>
+    </div>
+    <div id="mqtt-rfid-status">
+        Aguardando envio da solicitação de gravação pelo servidor PHP...
+    </div>
+    <div id="icon">
+        <div id="spinner">
+            <svg width="200px" height="200px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="hsl(220, 35%, 73%)" class="bi bi-gear-wide">
+                <path d="M8.932.727c-.243-.97-1.62-.97-1.864 0l-.071.286a.96.96 0 0 1-1.622.434l-.205-.211c-.695-.719-1.888-.03-1.613.931l.08.284a.96.96 0 0 1-1.186 1.187l-.284-.081c-.96-.275-1.65.918-.931 1.613l.211.205a.96.96 0 0 1-.434 1.622l-.286.071c-.97.243-.97 1.62 0 1.864l.286.071a.96.96 0 0 1 .434 1.622l-.211.205c-.719.695-.03 1.888.931 1.613l.284-.08a.96.96 0 0 1 1.187 1.187l-.081.283c-.275.96.918 1.65 1.613.931l.205-.211a.96.96 0 0 1 1.622.434l.071.286c.243.97 1.62.97 1.864 0l.071-.286a.96.96 0 0 1 1.622-.434l.205.211c.695.719 1.888.03 1.613-.931l-.08-.284a.96.96 0 0 1 1.187-1.187l.283.081c.96.275 1.65-.918.931-1.613l-.211-.205a.96.96 0 0 1 .434-1.622l.286-.071c.97-.243.97-1.62 0-1.864l-.286-.071a.96.96 0 0 1-.434-1.622l.211-.205c.719-.695.03-1.888-.931-1.613l-.284.08a.96.96 0 0 1-1.187-1.186l.081-.284c.275-.96-.918-1.65-1.613-.931l-.205.211a.96.96 0 0 1-1.622-.434L8.932.727zM8 12.997a4.998 4.998 0 1 1 0-9.995 4.998 4.998 0 0 1 0 9.996z"/>
+            </svg>
+        </div>
+    </div>
+    <button id="btn-cancel">Cancelar gravação</button>
+<script>
+let icon = document.getElementById("icon");
+let MQTTStatusHTML = document.getElementById("mqtt-rfid-status");
+let btnCancel = document.getElementById("btn-cancel");
+
+// Simulate the initial request
+MQTTStatusHTML.innerHTML = "Solicitação de gravação enviada pelo servidor.<br>Aguardando dispositivo IoT.";
+
+// State management
+let currentState = 0;
+let isCancelled = false;
+const states = [
+    { // State 0: Initial state
+        statusText: "Solicitação de gravação enviada pelo servidor.<br>Aguardando dispositivo IoT.",
+        iconHTML: '<div id="spinner"><svg width="200px" height="200px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="hsl(220, 35%, 73%)" class="bi bi-gear-wide"><path d="M8.932.727c-.243-.97-1.62-.97-1.864 0l-.071.286a.96.96 0 0 1-1.622.434l-.205-.211c-.695-.719-1.888-.03-1.613.931l.08.284a.96.96 0 0 1-1.186 1.187l-.284-.081c-.96-.275-1.65.918-.931 1.613l.211.205a.96.96 0 0 1-.434 1.622l-.286.071c-.97.243-.97 1.62 0 1.864l.286.071a.96.96 0 0 1 .434 1.622l-.211.205c-.719.695-.03 1.888.931 1.613l.284-.08a.96.96 0 0 1 1.187 1.187l-.081.283c-.275.96.918 1.65 1.613.931l.205-.211a.96.96 0 0 1 1.622.434l.071.286c.243.97 1.62.97 1.864 0l.071-.286a.96.96 0 0 1 1.622-.434l.205.211c.695.719 1.888.03 1.613-.931l-.08-.284a.96.96 0 0 1 1.187-1.187l.283.081c.96.275 1.65-.918.931-1.613l-.211-.205a.96.96 0 0 1 .434-1.622l.286-.071c.97-.243.97-1.62 0-1.864l-.286-.071a.96.96 0 0 1-.434-1.622l.211-.205c.719-.695.03-1.888-.931-1.613l-.284.08a.96.96 0 0 1-1.187-1.186l.081-.284c.275-.96-.918-1.65-1.613-.931l-.205.211a.96.96 0 0 1-1.622-.434L8.932.727zM8 12.997a4.998 4.998 0 1 1 0-9.995 4.998 4.998 0 0 1 0 9.996z"/></svg></div>',
+        buttonStyle: "display: inline"
+    },
+    { // State 1: Device ready
+        statusText: "Dispositivo IoT pronto para gravação.<br>Posicione a tag sobre o leitor.",
+        iconHTML: '<img id="rfid" src="/rfid.svg">',
+        buttonStyle: "display: inline"
+    },
+    { // State 2: Write completed
+        statusText: "Gravação concluída. Retire a tag do leitor.",
+        iconHTML: "<div id='success'>✓</div>",
+        buttonStyle: "display: none"
+    },
+    { // State 3: Cancelled (special state)
+        statusText: "Gravação cancelada.",
+        iconHTML: "<div id='fail'>✕</div>",
+        buttonStyle: "display: none"
+    }
+];
+
+// Function to update the UI based on current state
+function updateState() {
+    if (isCancelled) {
+        // Show cancelled state
+        const cancelState = states[3];
+        MQTTStatusHTML.innerHTML = cancelState.statusText;
+        icon.innerHTML = cancelState.iconHTML;
+        btnCancel.style = cancelState.buttonStyle;
+        document.body.classList.remove("waiting");
+        return;
+    }
+    
+    if (currentState < 3) { // Only go up to state 2 (completed)
+        const state = states[currentState];
+        MQTTStatusHTML.innerHTML = state.statusText;
+        icon.innerHTML = state.iconHTML;
+        btnCancel.style = state.buttonStyle;
+        
+        if (currentState === 2) {
+            document.body.classList.remove("waiting");
+        }
+        
+        currentState++;
+    }
+}
+
+// Start the simulation
+const interval1 = setTimeout(updateState, 3000); // First transition after 3 seconds
+const interval2 = setInterval(updateState, 3000); // Continue every 3 seconds
+
+// Cancel button functionality (immediate transition to final state)
+btnCancel.onclick = function(event) {
+    event.preventDefault();
+    isCancelled = true;
+    clearTimeout(interval1); // Stop the automatic transitions
+    clearInterval(interval2); // Stop the automatic transitions
+    
+    const cancelState = states[3];
+    MQTTStatusHTML.innerHTML = cancelState.statusText;
+    icon.innerHTML = cancelState.iconHTML;
+    btnCancel.style = cancelState.buttonStyle;
+    document.body.classList.remove("waiting");
+};
+</script>
+</div>
+
+</body>
+</html>
