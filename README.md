@@ -10,8 +10,6 @@ Para visualização via GitHub Pages [aqui](https://zidrewndacht.github.io/iot-e
 
 Para visualizar a interface de administrador, faça "login" com email e senha em branco, ou clique [aqui](https://zidrewndacht.github.io/iot-entrada-escola-static-demo).
 
-É possível visualizar o processo de gravação de cartões ao clicar em "gravar nova tag" para qualquer aluno. A interação de "gravação" é simulada com timers. A tela de splash é também simulada por um timer, a aplicação real pode ser mais rápida ou mais devagar que isso a depender da velocidade da rede.
+É possível visualizar o processo de gravação de cartões ao clicar em "gravar nova tag" para qualquer aluno. A interação de "gravação" é simulada com timers. A tela de splash é também simulada por um timer para oportunizar tempo suficiente para sua visualização; a aplicação real pode ter abertura mais rápida ou mais devagar que a demonstração, a depender da velocidade da rede.
 
-Para visualizar a página de responsável clique [aqui](https://zidrewndacht.github.io/iot-entrada-escola-static-demo/resp.html) ou faça "login" usando qualquer email (exceto em branco). 
-
-Envio de formulários ainda precisa ser corrigido. Causam falha na animação de fechamento do modal pois o servidor responde ao envio com 405. preventDefault() será implementado para que modais de formulário sejam apenas fechados sem nenhuma solicitação ao servidor.
+Para visualizar a página de responsável clique [aqui](https://zidrewndacht.github.io/iot-entrada-escola-static-demo/resp.html) ou faça "login" usando qualquer email (exceto em branco). Diferente do painel administrativo, a página de responsável é otimizada para telas pequenas.
